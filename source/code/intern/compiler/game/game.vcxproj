@@ -70,6 +70,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\build\win64\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\win64\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -100,15 +105,21 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\..\extern\sfml\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(SolutionDir)..\build\win64\$(ProjectName)\$(Configuration)\$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\extern\sfml\lib</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>copy ..\..\build\win64\$(ProjectName)\$(Configuration)\*.exe ..\..\..\..\bin\</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -128,6 +139,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\game\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\core.vcxproj">
+      <Project>{83dccb8b-a1c5-4684-b765-c3a93b586fb0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\data\data.vcxproj">
+      <Project>{234a7b67-0496-4760-9118-5d69b0c5dbfe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\graphics\graphics.vcxproj">
+      <Project>{ff4cd317-cfd8-4717-a545-e84bd69f9fb6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\gui\gui.vcxproj">
+      <Project>{a61e3c44-10f5-410f-93b8-a1f86713e61a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\logic\logic.vcxproj">
+      <Project>{d21383b8-54d7-4737-9e7d-c34b7a01f2e0}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
