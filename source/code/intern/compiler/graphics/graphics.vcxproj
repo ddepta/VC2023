@@ -151,6 +151,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\graphics\main.cpp" />
+    <ClCompile Include="gfx_play_phase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gfx_play_phase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

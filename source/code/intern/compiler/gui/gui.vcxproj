@@ -151,6 +151,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\gui\main.cpp" />
+    <ClCompile Include="gui_play_phase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gui_play_phase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

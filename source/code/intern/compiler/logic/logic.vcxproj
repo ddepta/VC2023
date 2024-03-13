@@ -149,6 +149,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\logic\main.cpp" />
+    <ClCompile Include="logic_play_phase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logic_play_phase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
