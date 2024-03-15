@@ -153,7 +153,6 @@
     <ClCompile Include="..\..\src\logic\logic_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\logic\logic_startup_phase.cpp" />
     <ClCompile Include="..\..\src\logic\logic_unload_phase.cpp" />
-    <ClCompile Include="..\..\src\logic\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\logic\logic_load_phase.h" />

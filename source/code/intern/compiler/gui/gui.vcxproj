@@ -156,7 +156,6 @@
     <ClCompile Include="..\..\src\gui\gui_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\gui\gui_startup_phase.cpp" />
     <ClCompile Include="..\..\src\gui\gui_unload_phase.cpp" />
-    <ClCompile Include="..\..\src\gui\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\gui\gui_load_phase.h" />

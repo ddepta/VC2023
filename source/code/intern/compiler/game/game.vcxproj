@@ -158,7 +158,6 @@
     <ClCompile Include="..\..\src\game\game_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\game\game_startup_phase.cpp" />
     <ClCompile Include="..\..\src\game\game_unload_phase.cpp" />
-    <ClCompile Include="..\..\src\game\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\core\core.vcxproj">

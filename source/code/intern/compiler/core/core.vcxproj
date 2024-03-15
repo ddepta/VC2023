@@ -147,9 +147,6 @@
       <Command>copy ..\..\build\win64\$(ProjectName)\$(Configuration)\*.lib ..\..\build\win64</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\src\core\main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
