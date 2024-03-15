@@ -16,6 +16,7 @@ namespace Game
 
             CPlayPhase(const CPlayPhase&) = delete;
             CPlayPhase& operator = (const CPlayPhase&) = delete;
+
         private:
             CPlayPhase() :
                 nextRunPhase(CPhase::Play)

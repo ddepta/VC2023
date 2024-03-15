@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\graphics\gfx_load_phase.cpp" />
+    <ClCompile Include="..\..\src\graphics\gfx_mainmenu_phase.cpp" />
+    <ClCompile Include="..\..\src\graphics\gfx_play_phase.cpp" />
+    <ClCompile Include="..\..\src\graphics\gfx_shutdown_phase.cpp" />
+    <ClCompile Include="..\..\src\graphics\gfx_startup_phase.cpp" />
+    <ClCompile Include="..\..\src\graphics\gfx_unload_phase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\graphics\gfx_load_phase.h" />
+    <ClInclude Include="..\..\src\graphics\gfx_mainmenu_phase.h" />
+    <ClInclude Include="..\..\src\graphics\gfx_play_phase.h" />
+    <ClInclude Include="..\..\src\graphics\gfx_shutdown_phase.h" />
+    <ClInclude Include="..\..\src\graphics\gfx_startup_phase.h" />
+    <ClInclude Include="..\..\src\graphics\gfx_unload_phase.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -149,13 +165,6 @@
       <Command>copy ..\..\build\win64\$(ProjectName)\$(Configuration)\*.lib ..\..\build\win64</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\src\graphics\main.cpp" />
-    <ClCompile Include="gfx_play_phase.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="gfx_play_phase.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,12 +18,36 @@
     <ClCompile Include="..\..\src\logic\main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="logic_play_phase.cpp">
+    <ClCompile Include="..\..\src\logic\logic_load_phase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logic\logic_play_phase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logic\logic_shutdown_phase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logic\logic_startup_phase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logic\logic_unload_phase.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="logic_play_phase.h">
+    <ClInclude Include="..\..\src\logic\logic_load_phase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logic\logic_play_phase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logic\logic_shutdown_phase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logic\logic_startup_phase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logic\logic_unload_phase.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
