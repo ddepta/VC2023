@@ -7,23 +7,34 @@
 
 namespace Game
 {
-    class CApplication
-    {
-        private:
+	class CApplication
+	{
+	public:
+		static CApplication& GetInstance()
+		{
+			static CApplication instance;
+			return instance;
+		};
 
-            // Old School: CPhase* m_pPhases[CPhase::NumberOfMembers];
+		CApplication(const CApplication&) = delete;
+		CApplication& operator = (const CApplication&) = delete;
 
-            std::array<CPhase*, CPhase::NumberOfMembers> m_pPhases;
-            CPhase::EPhase                               m_CurrentPhase;
+	public:
+		void Startup();
+		void Run();
+		void Shutdown();
 
-        private:
+	private:
 
-            CApplication();
+		// Old School: CPhase* m_pPhases[CPhase::NumberOfMembers];
 
-            void Run();
+		std::array<CPhase*, CPhase::NumberOfMembers> m_pPhases;
+		CPhase::EPhase                               m_CurrentPhase;
 
-        private:
+	private:
+		CApplication();
 
-            void RunPhases();
-    };
+	private:
+		void RunPhases();
+	};
 }
