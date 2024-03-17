@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include "core/core_constants.h"
-#include "core/core_operations.h"
+#include "core_constants.h"
+#include "core_operations.h"
 
 #include <assert.h>
 
@@ -229,7 +229,7 @@ namespace Core
     using Double4    = CVector4<double>;
 } // namespace Core
 
-#include "core/core_matrix4x4.h"
+#include "core_matrix4x4.h"
 
 namespace Core
 {

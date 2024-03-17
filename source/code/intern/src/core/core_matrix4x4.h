@@ -16,9 +16,9 @@
 
 #pragma once
 
-#include "core/core_constants.h"
-#include "core/core_operations.h"
-#include "core/core_swap.h"
+#include "core_constants.h"
+#include "core_operations.h"
+#include "core_swap.h"
 
 #include <assert.h>
 
@@ -197,9 +197,9 @@ namespace Core
     };
 } // namespace Core
 
-#include "core/core_matrix3x3.h"
-#include "core/core_vector3.h"
-#include "core/core_vector4.h"
+#include "core_matrix3x3.h"
+#include "core_vector3.h"
+#include "core_vector4.h"
 
 namespace Core
 {

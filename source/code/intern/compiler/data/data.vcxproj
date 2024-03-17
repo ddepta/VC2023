@@ -148,15 +148,27 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\data\data_entity_iterator.cpp" />
+    <ClCompile Include="..\..\src\data\data_entity_link.cpp" />
+    <ClCompile Include="..\..\src\data\data_entity_list.cpp" />
     <ClCompile Include="..\..\src\data\data_load_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_mainmenu_phase.cpp" />
+    <ClCompile Include="..\..\src\data\data_map.cpp" />
     <ClCompile Include="..\..\src\data\data_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_startup_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_unload_phase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\data\data_entity.h" />
+    <ClInclude Include="..\..\src\data\data_entity_category.h" />
+    <ClInclude Include="..\..\src\data\data_entity_folder.h" />
+    <ClInclude Include="..\..\src\data\data_entity_iterator.h" />
+    <ClInclude Include="..\..\src\data\data_entity_link.h" />
+    <ClInclude Include="..\..\src\data\data_entity_list.h" />
     <ClInclude Include="..\..\src\data\data_load_phase.h" />
     <ClInclude Include="..\..\src\data\data_mainmenu_phase.h" />
+    <ClInclude Include="..\..\src\data\data_map.h" />
+    <ClInclude Include="..\..\src\data\data_sector.h" />
     <ClInclude Include="..\..\src\data\data_shutdown_phase.h" />
     <ClInclude Include="..\..\src\data\data_startup_phase.h" />
     <ClInclude Include="..\..\src\data\data_unload_phase.h" />
