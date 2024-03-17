@@ -154,6 +154,7 @@
     <ClCompile Include="..\..\src\data\data_load_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_mainmenu_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_map.cpp" />
+    <ClCompile Include="..\..\src\data\data_meta_entity_system.cpp" />
     <ClCompile Include="..\..\src\data\data_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_startup_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_unload_phase.cpp" />
@@ -168,6 +169,8 @@
     <ClInclude Include="..\..\src\data\data_load_phase.h" />
     <ClInclude Include="..\..\src\data\data_mainmenu_phase.h" />
     <ClInclude Include="..\..\src\data\data_map.h" />
+    <ClInclude Include="..\..\src\data\data_meta_entity.h" />
+    <ClInclude Include="..\..\src\data\data_meta_entity_system.h" />
     <ClInclude Include="..\..\src\data\data_sector.h" />
     <ClInclude Include="..\..\src\data\data_shutdown_phase.h" />
     <ClInclude Include="..\..\src\data\data_startup_phase.h" />

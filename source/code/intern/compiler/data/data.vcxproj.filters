@@ -42,6 +42,9 @@
     <ClCompile Include="..\..\src\data\data_map.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\data\data_meta_entity_system.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\data\data_load_phase.h">
@@ -81,6 +84,12 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\data\data_sector.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\data\data_meta_entity_system.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\data\data_meta_entity.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
