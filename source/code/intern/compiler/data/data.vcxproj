@@ -113,6 +113,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\extern\tinyxml\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,6 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\extern\tinyxml\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,6 +157,7 @@
     <ClCompile Include="..\..\src\data\data_mainmenu_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_map.cpp" />
     <ClCompile Include="..\..\src\data\data_map_system.cpp" />
+    <ClCompile Include="..\..\src\data\data_meta_entity.cpp" />
     <ClCompile Include="..\..\src\data\data_meta_entity_system.cpp" />
     <ClCompile Include="..\..\src\data\data_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_startup_phase.cpp" />

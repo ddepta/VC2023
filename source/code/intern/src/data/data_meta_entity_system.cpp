@@ -3,67 +3,29 @@
 #include "data_meta_entity_system.h"
 #include "../core/core_item_manager.h"
 #include "../core/core_id_manager.h"
+#include "../core/core_aabb3.h"
 
 using namespace Data;
 
-namespace
+int CMetaEntitySystem::Initialize(tinyxml2::XMLDocument& _rDocument)
 {
-    class CDataMetaEntitySystem
+    tinyxml2::XMLElement* pMetaEntities = _rDocument.FirstChildElement("meta-entities");
+    tinyxml2::XMLElement* pMetaEntity = pMetaEntities->FirstChildElement("meta-entity");
+
+    int MetaEntityCount = 0;
+
+    while (pMetaEntity != nullptr)
     {
-    public:
+        std::string name = pMetaEntity->FindAttribute("name")->Value();
+        tinyxml2::XMLElement* pDataElement = pMetaEntity->FirstChildElement("data");
+        float size = pDataElement->FirstChildElement("size")->FindAttribute("value")->FloatValue();
 
-        static CDataMetaEntitySystem& GetInstance();
+        MetaEntityCount++;
 
-    public:
-
-        CMetaEntity& CreateMetaEntity(const std::string& _rName);
-        void DestroyMetaEntity(CMetaEntity& _rMetaEntity);
-
-        CMetaEntity* SearchMetaEntity(std::string& _rName);
-        CMetaEntity& GetMetaEntity(int _ID);
-
-    private:
-
-        class CInternMetaEntity : public CMetaEntity
-        {
-            friend class CDataMetaEntitySystem;
-        };
-
-        using CMetaEntityAllocator = Core::CItemManager<CInternMetaEntity>;
-
-    private:
-
-        CMetaEntityAllocator m_Allocator;
-        Core::CIDManager     m_Names;
-
-    private:
-
-        CDataMetaEntitySystem();
-        ~CDataMetaEntitySystem();
-    };
-}
-
-namespace
-{
-    CDataMetaEntitySystem& CDataMetaEntitySystem::GetInstance()
-    {
-        static CDataMetaEntitySystem s_Instance;
-
-        return s_Instance;
+        pMetaEntity = pMetaEntity->NextSiblingElement();
     }
-}
 
-namespace
-{
-    // Konstruktor, Destruktor, MemberMethoden
-    CMetaEntity& CDataMetaEntitySystem::CreateMetaEntity(const std::string& _rName)
-    {
-        Core::CIDManager::BID ID = m_Names.Register(_rName);
-
-        CInternMetaEntity& rMetaEntity = m_Allocator.CreateItem(ID);
-
-        return rMetaEntity;
-    }
+    return MetaEntityCount;
 }
 
 namespace Data
@@ -72,22 +34,22 @@ namespace Data
     {
         CMetaEntity& CreateMetaEntity(std::string& _rName)
         {
-            return CDataMetaEntitySystem::GetInstance().CreateMetaEntity(_rName);
+            return CMetaEntitySystem::GetInstance().CreateMetaEntity(_rName);
         }
 
         void DestroyMetaEntity(CMetaEntity& _rMetaEntity)
         {
-            CDataMetaEntitySystem::GetInstance().DestroyMetaEntity(_rMetaEntity);
+            CMetaEntitySystem::GetInstance().DestroyMetaEntity(_rMetaEntity);
         }
 
         CMetaEntity* SearchMetaEntity(std::string& _rName)
         {
-            return CDataMetaEntitySystem::GetInstance().SearchMetaEntity(_rName);
+            return CMetaEntitySystem::GetInstance().SearchMetaEntity(_rName);
         }
 
         CMetaEntity& GetMetaEntity(int _ID)
         {
-            return CDataMetaEntitySystem::GetInstance().GetMetaEntity(_ID);
+            return CMetaEntitySystem::GetInstance().GetMetaEntity(_ID);
         }
     }
 }

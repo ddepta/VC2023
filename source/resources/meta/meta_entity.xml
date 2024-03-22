@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta_entities>
+    <meta_entity name="wall_type_a">
+        <data>
+            <size width="1.4" height="0.8"/>
+        </data>
+        <graphics>
+            <texture path="path"/>
+        </graphics>
+    </meta_entity>
+</meta_entities>
