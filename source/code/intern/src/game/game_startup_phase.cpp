@@ -10,7 +10,8 @@ namespace Game
 {
     int CStartupPhase::InternOnEnter()
     {
-        //Logic::CStartupPhase::GetInstance().OnEnter();
+        Data::CStartupPhase::GetInstance().OnEnter();
+        Logic::CStartupPhase::GetInstance().OnEnter();
         Gui::CStartupPhase::GetInstance().OnEnter();
         Gfx::CStartupPhase::GetInstance().OnEnter();
 
@@ -32,7 +33,7 @@ namespace Game
 
     int CStartupPhase::InternOnLeave()
     {
-        //Data::CStartupPhase::GetInstance().OnLeave();
+        Data::CStartupPhase::GetInstance().OnLeave();
         Logic::CStartupPhase::GetInstance().OnLeave();
         Gui::CStartupPhase::GetInstance().OnLeave();
         Gfx::CStartupPhase::GetInstance().OnLeave();

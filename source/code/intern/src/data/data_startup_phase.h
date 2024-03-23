@@ -18,7 +18,7 @@ namespace Data
 
     public:
         void OnEnter();
-        void OnRun();
+        void OnRun(tinyxml2::XMLDocument& _rDocument);
         void OnLeave();
 
     private:
