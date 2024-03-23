@@ -1,9 +1,9 @@
 
 #include "game_play_phase.h"
 
-#include "../../src/logic/logic_play_phase.h"
-#include "../../src/gui/gui_play_phase.h"
-#include "../../src/graphics/gfx_play_phase.h"
+#include "logic/logic_play_phase.h"
+#include "gui/gui_play_phase.h"
+#include "graphics/gfx_play_phase.h"
 
 namespace Game
 {

@@ -17,12 +17,12 @@ namespace Game
     CApplication::CApplication()
         : m_pPhases
           { 
-              &CShutdownPhase  ::GetInstance(),
               &CStartupPhase   ::GetInstance(),
-              &CLoadPhase      ::GetInstance(),
               &CMainMenuPhase  ::GetInstance(),
+              &CLoadPhase      ::GetInstance(),
               &CPlayPhase      ::GetInstance(),
               &CUnloadPhase    ::GetInstance(),
+              &CShutdownPhase  ::GetInstance(),
           }
         , m_CurrentPhase(CPhase::Undefined)
     {
@@ -30,27 +30,34 @@ namespace Game
 
     void CApplication::Startup()
     {
-        sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-        sf::CircleShape shape(100.f);
-        shape.setFillColor(sf::Color::Green);
+        m_Window.create(sf::VideoMode(200, 200), "SFML works!");
 
-        while (window.isOpen())
-        {
-            sf::Event event;
-            while (window.pollEvent(event))
-            {
-                if (event.type == sf::Event::Closed)
-                    window.close();
-            }
+        m_CurrentPhase = CPhase::Startup;
 
-            window.clear();
-            window.draw(shape);
-            window.display();
-        }
+        m_pPhases[m_CurrentPhase]->OnEnter();
     }
 
     void CApplication::Run()
     {
+        sf::Event event;
+
+        for (;;)
+        {
+            if (m_Window.isOpen() == false)
+            {
+                break;
+            }
+
+            while (m_Window.pollEvent(event))
+            {
+                if (event.type == sf::Event::Closed)
+                {
+                    m_Window.close();
+                }
+            }
+
+            RunPhases();
+        }
     }
 
     void CApplication::Shutdown() 
@@ -64,6 +71,7 @@ namespace Game
         assert(pCurrentPhase != nullptr);
 
         CPhase::EPhase NextPhase = static_cast<CPhase::EPhase>(pCurrentPhase->OnRun());
+        int indexOfNextPhase = pCurrentPhase->OnRun();
 
         if (NextPhase != m_CurrentPhase)
         {
@@ -82,9 +90,11 @@ namespace Game
 
 int main()
 {
-    Game::CApplication& application = Game::CApplication::GetInstance();
+    Game::CApplication& rInstance = Game::CApplication::GetInstance();
 
-    application.Startup();
-    application.Run();
-    application.Shutdown();
+    rInstance.Startup();
+    rInstance.Run();
+    rInstance.Shutdown();
+
+    return 0;
 }

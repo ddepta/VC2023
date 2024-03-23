@@ -2,8 +2,8 @@
 #pragma once
 
 #include "game_phase.h"
-
 #include <array>
+#include <SFML/Graphics/RenderWindow.hpp>
 
 namespace Game
 {
@@ -24,9 +24,10 @@ namespace Game
 		void Run();
 		void Shutdown();
 
-	private:
+	public:
+		sf::RenderWindow m_Window;
 
-		// Old School: CPhase* m_pPhases[CPhase::NumberOfMembers];
+	private:
 
 		std::array<CPhase*, CPhase::NumberOfMembers> m_pPhases;
 		CPhase::EPhase                               m_CurrentPhase;
