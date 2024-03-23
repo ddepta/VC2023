@@ -6,9 +6,8 @@ namespace Data
     void CStartupPhase::OnEnter()
     {}
 
-    void CStartupPhase::OnRun(tinyxml2::XMLDocument& _rDocument)
+    void CStartupPhase::OnRun()
     {
-        CMetaEntitySystem::GetInstance().Initialize(_rDocument);
     }
 
     void CStartupPhase::OnLeave()
