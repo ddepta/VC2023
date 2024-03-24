@@ -2,44 +2,55 @@
 #pragma once
 
 #include "data_entity_link.h"
+#include "data_entity_category.h"
+#include "data_meta_entity.h"
 
 #include <array>
+#include "../core/core_id_manager.h"
 
 namespace Data
 {
-    class CEntityList;
+	class CEntityList;
 }
 
 namespace Data
 {
-    class CEntity
-    {
-        public:
+	class CEntity
+	{
+	public:
 
-            enum EFacet
-            {
-                GraphicsFacet,
-                LogicFacet,
-                NumberOfFacets
-            };
+		enum EFacet
+		{
+			GraphicsFacet,
+			LogicFacet,
+			NumberOfFacets
+		};
 
-        public:
+	public:
 
-            void SetFacet(EFacet _Type, void* _pFacet);
-            void* GetFacet(EFacet _Type);
+		void SetFacet(EFacet _Type, void* _pFacet);
+		void* GetFacet(EFacet _Type);
 
-        private:
+	public:
+		Core::CIDManager::BID m_Id;
+		SEntityCategory::Enum m_Category;
+		Core::CVector3<float> m_Position;
+		Core::CVector3<float> m_Size;
+		Core::CAABB3<float> m_AABB;
+		CMetaEntity* m_pMetaEntity;
 
-            using CFacetArray = std::array<void*, NumberOfFacets>;
+	private:
 
-        private:
+		using CFacetArray = std::array<void*, NumberOfFacets>;
 
-            CFacetArray m_Facets;
-            CEntityLink m_Link;
+	private:
 
-        private:
+		CFacetArray m_Facets;
+		CEntityLink m_Link;
 
-            friend class CEntityLink;
-            friend class CEntityList;
-    };
+	private:
+
+		friend class CEntityLink;
+		friend class CEntityList;
+	};
 }

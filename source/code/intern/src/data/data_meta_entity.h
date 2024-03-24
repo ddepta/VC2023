@@ -14,10 +14,10 @@ namespace Data
         ~CMetaEntity();
 
     public:
-        int Id;
-        std::string Name;
-        float Size;
-        Core::AABB2Float AABB;
+        int m_Id;
+        std::string m_Name;
+        float m_Size;
+        Core::AABB2Float m_AABB;
 
         void* facets[2];
     };

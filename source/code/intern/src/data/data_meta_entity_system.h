@@ -4,6 +4,8 @@
 #include <string>
 #include "tinyxml2.h"
 #include "data_meta_entity.h"
+#include "../core/core_id_manager.h"
+#include "../core/core_item_manager.h"
 
 namespace Data
 {
@@ -21,8 +23,14 @@ namespace Data
 
     public:
         int Initialize(tinyxml2::XMLDocument& _rDocument);
+        CMetaEntity& GetMetaEntityByID(Core::CIDManager::BID _ID);
+        Core::CIDManager::BID GetMetaEntityID(std::string _Name);
 
     private:
         CMetaEntitySystem() {};
+
+    private:
+        Core::CIDManager m_IdManager;
+        Core::CItemManager<CMetaEntity> m_itemManager;
     };
 }

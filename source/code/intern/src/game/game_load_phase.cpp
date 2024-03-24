@@ -4,6 +4,8 @@
 #include "gui/gui_load_phase.h"
 #include "graphics/gfx_load_phase.h"
 
+#include "tinyxml2.h"
+
 namespace Game
 {
     int CLoadPhase::InternOnEnter()
@@ -18,7 +20,10 @@ namespace Game
 
     int CLoadPhase::InternOnRun()
     {
-        Data ::CLoadPhase::GetInstance().OnRun();
+        tinyxml2::XMLDocument* pDocument = new tinyxml2::XMLDocument();
+        pDocument->LoadFile("..\\resources\\level\\level.xml");
+
+        Data ::CLoadPhase::GetInstance().OnRun(*pDocument);
         Logic::CLoadPhase::GetInstance().OnRun();
         Gui  ::CLoadPhase::GetInstance().OnRun();
         Gfx  ::CLoadPhase::GetInstance().OnRun();

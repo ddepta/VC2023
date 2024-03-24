@@ -43,6 +43,7 @@
     <ClInclude Include="..\..\src\core\core_pool.h" />
     <ClInclude Include="..\..\src\core\core_smart_pointee.h" />
     <ClInclude Include="..\..\src\core\core_smart_ptr.h" />
+    <ClInclude Include="..\..\src\core\core_splitstrings.h" />
     <ClInclude Include="..\..\src\core\core_swap.h" />
     <ClInclude Include="..\..\src\core\core_time.h" />
     <ClInclude Include="..\..\src\core\core_uncopyable.h" />

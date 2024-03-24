@@ -30,6 +30,8 @@ namespace Core
 
             bool ContainsName(const std::string& _rString) const;
 
+            BID GetByName(const std::string& _rString) const;
+
             const std::string& GetName(BID _ID) const;
 
             size_t GetNumberOfNames() const;
