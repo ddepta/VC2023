@@ -10,11 +10,11 @@ namespace Game
             enum EPhase
             {
                 Startup,
-                Shutdown,
-                LoadMap,
                 MainMenu,
+                LoadMap,
                 Play,
                 UnloadMap,
+                Shutdown,
                 NumberOfMembers,
                 Undefined = -1,
             };

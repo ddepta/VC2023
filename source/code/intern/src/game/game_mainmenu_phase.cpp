@@ -7,6 +7,8 @@ namespace Game
 {
     int CMainMenuPhase::InternOnEnter()
     {
+        nextRunPhase = EPhase::MainMenu;
+
         Data::CMainMenuPhase::GetInstance().OnEnter();
         Gui ::CMainMenuPhase::GetInstance().OnEnter();
         Gfx ::CMainMenuPhase::GetInstance().OnEnter();

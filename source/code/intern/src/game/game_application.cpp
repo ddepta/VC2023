@@ -30,7 +30,7 @@ namespace Game
 
     void CApplication::Startup()
     {
-        m_Window.create(sf::VideoMode(200, 200), "SFML works!");
+        m_Window.create(sf::VideoMode(900, 600), "Visual Computing - Daniel Depta");
 
         m_CurrentPhase = CPhase::Startup;
 
