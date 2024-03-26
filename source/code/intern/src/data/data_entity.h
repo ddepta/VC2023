@@ -10,47 +10,47 @@
 
 namespace Data
 {
-	class CEntityList;
+    class CEntityList;
 }
 
 namespace Data
 {
-	class CEntity
-	{
-	public:
+    class CEntity
+    {
+    public:
 
-		enum EFacet
-		{
-			GraphicsFacet,
-			LogicFacet,
-			NumberOfFacets
-		};
+        enum EFacet
+        {
+            GraphicsFacet,
+            LogicFacet,
+            NumberOfFacets
+        };
 
-	public:
+    public:
 
-		void SetFacet(EFacet _Type, void* _pFacet);
-		void* GetFacet(EFacet _Type);
+        void SetFacet(EFacet _Type, void* _pFacet);
+        void* GetFacet(EFacet _Type);
 
-	public:
-		Core::CIDManager::BID m_Id;
-		SEntityCategory::Enum m_Category;
-		Core::CVector3<float> m_Position;
-		Core::CVector3<float> m_Size;
-		Core::CAABB3<float> m_AABB;
-		CMetaEntity* m_pMetaEntity;
+    public:
+        Core::CIDManager::BID m_Id;
+        SEntityCategory::Enum m_Category;
+        Core::CVector3<float> m_Position;
+        Core::CVector3<float> m_Size;
+        Core::CAABB3<float> m_AABB;
+        CMetaEntity* m_pMetaEntity;
 
-	private:
+    private:
 
-		using CFacetArray = std::array<void*, NumberOfFacets>;
+        using CFacetArray = std::array<void*, NumberOfFacets>;
 
-	private:
+    private:
 
-		CFacetArray m_Facets;
-		CEntityLink m_Link;
+        CFacetArray m_Facets;
+        CEntityLink m_Link;
 
-	private:
+    private:
 
-		friend class CEntityLink;
-		friend class CEntityList;
-	};
+        friend class CEntityLink;
+        friend class CEntityList;
+    };
 }

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <entities>
-    <entity name="willy" meta_entity="wall_type_a">
-        <data>
-            <position x="3.0" y="2.0"/>
-        </data>
-    </entity>
+  <entity name="obstacle_0_0" meta-entity="obstacle">
+    <data>
+      <position>0.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
 </entities>

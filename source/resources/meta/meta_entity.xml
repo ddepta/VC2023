@@ -1,12 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <meta-entities>
-    <meta-entity name="wall-type-a">
-        <data>
-            <size value="0.0" />
-            <size width="1.4" height="0.8"/>
-        </data>
-        <graphics>
-            <texture path="path"/>
-        </graphics>
-    </meta-entity>
+  <meta-entity name="player">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="player.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="obstacle">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="obstacle.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg.png"/>
+    </graphics>
+  </meta-entity>
 </meta-entities>

@@ -9,7 +9,7 @@ namespace Data
     {
     public:
         CMetaEntity();
-        CMetaEntity(int _Id, std::string _Name, float _Size, Core::AABB2Float _AABB);
+        CMetaEntity(int _Id, std::string _Name, float _Size, Core::AABB3Float _AABB);
 
         ~CMetaEntity();
 
@@ -17,8 +17,20 @@ namespace Data
         int m_Id;
         std::string m_Name;
         float m_Size;
-        Core::AABB2Float m_AABB;
+        Core::AABB3Float m_AABB;
 
         void* facets[2];
+
+    public:
+
+        struct SFacetType
+        {
+            enum EType
+            {
+                GraphicsFacet,
+                LogicFacet,
+                NumberOfFacets
+            };
+        };
     };
 }

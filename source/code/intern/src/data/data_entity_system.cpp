@@ -81,4 +81,9 @@ namespace Data
 
         return _rEntity;
     }
+
+    std::vector<Data::CEntity*> CEntitySystem::GetAllEntities()
+    {
+        return m_itemManager.GetAllItems();
+    }
 }
