@@ -33,6 +33,9 @@
     <ClCompile Include="..\..\src\gui\gui_play_phase.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\gui\gui_input_system.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\gui\gui_load_phase.h">
@@ -51,6 +54,12 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\gui\gui_play_phase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gui\gui_input.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gui\gui_input_system.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

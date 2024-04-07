@@ -154,6 +154,8 @@
     <ClCompile Include="..\..\src\data\data_entity_link.cpp" />
     <ClCompile Include="..\..\src\data\data_entity_list.cpp" />
     <ClCompile Include="..\..\src\data\data_entity_system.cpp" />
+    <ClCompile Include="..\..\src\data\data_event.cpp" />
+    <ClCompile Include="..\..\src\data\data_event_system.cpp" />
     <ClCompile Include="..\..\src\data\data_load_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_mainmenu_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_map.cpp" />
@@ -172,6 +174,10 @@
     <ClInclude Include="..\..\src\data\data_entity_link.h" />
     <ClInclude Include="..\..\src\data\data_entity_list.h" />
     <ClInclude Include="..\..\src\data\data_entity_system.h" />
+    <ClInclude Include="..\..\src\data\data_event.h" />
+    <ClInclude Include="..\..\src\data\data_event_listener.h" />
+    <ClInclude Include="..\..\src\data\data_event_system.h" />
+    <ClInclude Include="..\..\src\data\data_event_type.h" />
     <ClInclude Include="..\..\src\data\data_load_phase.h" />
     <ClInclude Include="..\..\src\data\data_mainmenu_phase.h" />
     <ClInclude Include="..\..\src\data\data_map.h" />

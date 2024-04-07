@@ -2,32 +2,35 @@
 #pragma once
 
 #include "game_phase.h"
+#include "data/data_event.h"
 
 namespace Game
 {
     class CPlayPhase : public CPhase
     {
-        public:
-            static CPlayPhase& GetInstance()
-            {
-                static CPlayPhase instance;
-                return instance;
-            };
+    public:
+        static CPlayPhase& GetInstance()
+        {
+            static CPlayPhase instance;
+            return instance;
+        };
 
-            CPlayPhase(const CPlayPhase&) = delete;
-            CPlayPhase& operator = (const CPlayPhase&) = delete;
+        CPlayPhase(const CPlayPhase&) = delete;
+        CPlayPhase& operator = (const CPlayPhase&) = delete;
 
-        private:
-            CPlayPhase() :
-                nextRunPhase(CPhase::Play)
-            {};
+    public:
+        static void Finish(Data::CEvent& _rEvent);
+        static void Exit(Data::CEvent& _rEvent);
 
-        private:
-            int InternOnEnter() override;
-            int InternOnLeave() override;
-            int InternOnRun() override;
+    private:
+        CPlayPhase() : nextRunPhase(CPhase::Play) {};
 
-        private:
-            CPhase::EPhase nextRunPhase;
+    private:
+        int InternOnEnter() override;
+        int InternOnLeave() override;
+        int InternOnRun() override;
+
+    private:
+        CPhase::EPhase nextRunPhase;
     };
 }

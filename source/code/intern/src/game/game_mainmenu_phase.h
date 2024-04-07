@@ -1,31 +1,34 @@
 #pragma once
 #include "game_phase.h"
+#include "data/data_event.h"
 
 namespace Game
 {
     class CMainMenuPhase : public CPhase
     {
-        public:
-            static CMainMenuPhase& GetInstance()
-            {
-                static CMainMenuPhase instance;
-                return instance;
-            };
+    public:
+        static CMainMenuPhase& GetInstance()
+        {
+            static CMainMenuPhase instance;
+            return instance;
+        };
 
-            CMainMenuPhase(CMainMenuPhase const&) = delete;
-            CMainMenuPhase& operator=(CMainMenuPhase const&) = delete;
+        CMainMenuPhase(CMainMenuPhase const&) = delete;
+        CMainMenuPhase& operator=(CMainMenuPhase const&) = delete;
 
-        private:
-            CMainMenuPhase() :
-                nextRunPhase(CPhase::MainMenu)
-            {};
+    public:
+        static void OnStart(Data::CEvent& _rEvent);
+        static void OnExit(Data::CEvent& _rEvent);
 
-        private:
-            CPhase::EPhase nextRunPhase;
+    private:
+        CMainMenuPhase() : nextRunPhase(CPhase::MainMenu) {};
 
-        private:
-            int InternOnEnter() override;
-            int InternOnRun() override;
-            int InternOnLeave() override;
+    private:
+        CPhase::EPhase nextRunPhase;
+
+    private:
+        int InternOnEnter() override;
+        int InternOnRun() override;
+        int InternOnLeave() override;
     };
 }

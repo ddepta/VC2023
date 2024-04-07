@@ -150,6 +150,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\gui\gui_input_system.cpp" />
     <ClCompile Include="..\..\src\gui\gui_load_phase.cpp" />
     <ClCompile Include="..\..\src\gui\gui_mainmenu_phase.cpp" />
     <ClCompile Include="..\..\src\gui\gui_play_phase.cpp" />
@@ -158,6 +159,8 @@
     <ClCompile Include="..\..\src\gui\gui_unload_phase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\gui\gui_input.h" />
+    <ClInclude Include="..\..\src\gui\gui_input_system.h" />
     <ClInclude Include="..\..\src\gui\gui_load_phase.h" />
     <ClInclude Include="..\..\src\gui\gui_mainmenu_phase.h" />
     <ClInclude Include="..\..\src\gui\gui_play_phase.h" />

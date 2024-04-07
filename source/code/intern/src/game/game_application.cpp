@@ -9,6 +9,7 @@
 #include "game_play_phase.h"
 #include "game_shutdown_phase.h"
 #include "game_unload_phase.h"
+#include "data/data_event_system.h"
 
 #include <SFML/Graphics.hpp>
 
@@ -53,6 +54,11 @@ namespace Game
                 if (event.type == sf::Event::Closed)
                 {
                     m_Window.close();
+                }
+
+                if (event.type == sf::Event::KeyPressed)
+                {
+                    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchEvent, event.key.code);
                 }
             }
 
