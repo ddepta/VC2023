@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <entities>
-  <entity name="obstacle_0_0" meta-entity="obstacle">
+  <entity name="player" meta-entity="player">
     <data>
+      <type>0</type>
+      <position>128.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_0_0" meta-entity="rock">
+    <data>
+      <type>1</type>
       <position>0.0;0.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>

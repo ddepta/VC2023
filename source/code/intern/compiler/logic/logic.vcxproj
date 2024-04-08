@@ -156,6 +156,7 @@
     <ClCompile Include="..\..\src\logic\logic_play_phase.cpp" />
     <ClCompile Include="..\..\src\logic\logic_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\logic\logic_startup_phase.cpp" />
+    <ClCompile Include="..\..\src\logic\logic_system.cpp" />
     <ClCompile Include="..\..\src\logic\logic_unload_phase.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +166,7 @@
     <ClInclude Include="..\..\src\logic\logic_play_phase.h" />
     <ClInclude Include="..\..\src\logic\logic_shutdown_phase.h" />
     <ClInclude Include="..\..\src\logic\logic_startup_phase.h" />
+    <ClInclude Include="..\..\src\logic\logic_system.h" />
     <ClInclude Include="..\..\src\logic\logic_unload_phase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -56,22 +56,22 @@ namespace Gui
             {
                 Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::EnterPressed);
             }
-            //else if (Input.m_KeyInput.Key == sf::Keyboard::Key::Up)
-            //{
-            //    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::UpPressed);
-            //}
-            //else if (Input.m_KeyInput.Key == sf::Keyboard::Key::Down)
-            //{
-            //    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::DownPressed);
-            //}
-            //else if (Input.m_KeyInput.Key == sf::Keyboard::Key::Left)
-            //{
-            //    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::LeftPressed);
-            //}
-            //else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
-            //{
-            //    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::RightPressed);
-            //}
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W))
+            {
+                Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::UpPressed);
+            }
+            else if (Input.m_KeyInput.Key == sf::Keyboard::Key::Down || Input.m_KeyInput.Key == sf::Keyboard::Key::S)
+            {
+                Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::DownPressed);
+            }
+            else if (Input.m_KeyInput.Key == sf::Keyboard::Key::Left || Input.m_KeyInput.Key == sf::Keyboard::Key::A)
+            {
+                Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::LeftPressed);
+            }
+            else if (Input.m_KeyInput.Key == sf::Keyboard::Key::Right || Input.m_KeyInput.Key == sf::Keyboard::Key::D)
+            {
+                Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::RightPressed);
+            }
 
             RemoveNextInput();
         }

@@ -39,6 +39,9 @@
     <ClCompile Include="..\..\src\logic\logic_input_system.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\logic\logic_system.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\logic\logic_load_phase.h">
@@ -60,6 +63,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\logic\logic_input.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logic\logic_system.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
