@@ -19,7 +19,7 @@ namespace Data
         float m_Size;
         Core::AABB3Float m_AABB;
 
-        void* facets[2];
+        void* m_Facets[2];
 
     public:
 

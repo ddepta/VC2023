@@ -3,13 +3,19 @@
 
 namespace Data 
 {
-    CMetaEntity::CMetaEntity() {}
+    CMetaEntity::CMetaEntity()
+        : m_Id(-1)
+        , m_Name("")
+        , m_Size(0.0f)
+        , m_Facets{ nullptr, nullptr }
+    {}
 
     CMetaEntity::CMetaEntity(int _Id, std::string _Name, float _Size, Core::AABB3Float _AABB)
         : m_Id(_Id)
         , m_Name(_Name)
         , m_Size(_Size)
         , m_AABB(_AABB)
+        , m_Facets{ nullptr, nullptr }
     {}
 
     CMetaEntity::~CMetaEntity() {}

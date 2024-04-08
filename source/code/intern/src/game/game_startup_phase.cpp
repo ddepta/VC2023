@@ -26,7 +26,7 @@ namespace Game
         Data::CStartupPhase::GetInstance().OnRun(*pDocument);
         Logic::CStartupPhase::GetInstance().OnRun();
         Gui::CStartupPhase::GetInstance().OnRun();
-        Gfx::CStartupPhase::GetInstance().OnRun();
+        Gfx::CStartupPhase::GetInstance().OnRun(*pDocument);
 
         return EPhase::MainMenu;
     }

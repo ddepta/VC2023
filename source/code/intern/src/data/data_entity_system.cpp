@@ -1,5 +1,6 @@
 #include "data_entity_system.h"
 #include "data_meta_entity_system.h"
+#include "data_player_system.h"
 #include "../core/core_splitstrings.h"
 
 #include <tinyxml2.h>
@@ -13,58 +14,64 @@ namespace Data
     {
         int EntityCount = 0;
 
-        CMetaEntitySystem& _rMetaEntitySystem = CMetaEntitySystem::GetInstance();
+        CMetaEntitySystem& rMetaEntitySystem = CMetaEntitySystem::GetInstance();
 
         tinyxml2::XMLElement* pEntities = _rDocument.FirstChildElement("entities");
 
         // Iterate over each entity
-        for (tinyxml2::XMLElement* pXmlEntity = pEntities->FirstChildElement("_rEntity"); pXmlEntity != nullptr; pXmlEntity = pXmlEntity->NextSiblingElement())
+        for (tinyxml2::XMLElement* pXmlEntity = pEntities->FirstChildElement("entity"); pXmlEntity != nullptr; pXmlEntity = pXmlEntity->NextSiblingElement())
         {
             // Extract entity name and meta-entity name
             std::string Name = pXmlEntity->FindAttribute("name")->Value();
-            std::string MetaEntityName = pXmlEntity->FindAttribute("meta-_rEntity")->Value();
+            std::string MetaEntityName = pXmlEntity->FindAttribute("meta-entity")->Value();
 
             // Get meta-entity ID and reference
-            auto _ID = _rMetaEntitySystem.GetMetaEntityID(MetaEntityName);
-            CMetaEntity& _rMetaEntity = _rMetaEntitySystem.GetMetaEntityByID(_ID);
+            auto Id = rMetaEntitySystem.GetMetaEntityID(MetaEntityName);
+            CMetaEntity& rMetaEntity = rMetaEntitySystem.GetMetaEntityByID(Id);
 
             // Extract data element
             tinyxml2::XMLElement* pDataElement = pXmlEntity->FirstChildElement("data");
 
             // Extract type, size, and position information
             auto Type = atoi(pDataElement->FirstChildElement("type")->FirstChild()->Value());
-            auto SizeStrings = Core::SplitStrings(pDataElement->FirstChildElement("m_Size")->FirstChild()->Value(), ';');
-            auto PositionStrings = Core::SplitStrings(pDataElement->FirstChildElement("m_Position")->FirstChild()->Value(), ';');
+            auto SizeStrings = Core::SplitStrings(pDataElement->FirstChildElement("size")->FirstChild()->Value(), ';');
+            auto PositionStrings = Core::SplitStrings(pDataElement->FirstChildElement("position")->FirstChild()->Value(), ';');
 
-            CEntity& _rEntity = CreateEntity(Name);
+            CEntity& rEntity = CreateEntity(Name);
+
+            if (rMetaEntity.m_Name == "player")
+            {
+                Data::CPlayerSystem& playerSystem = Data::CPlayerSystem::GetInstance();
+                playerSystem.SetPlayer(&rEntity);
+            }
 
             if (Type >= SEntityCategory::NumberOfMembers)
             {
-                _rEntity.m_Category = SEntityCategory::Undefined;
+                rEntity.m_Category = SEntityCategory::Undefined;
             }
             else
             {
-                _rEntity.m_Category = SEntityCategory::Enum(Type);
+                rEntity.m_Category = SEntityCategory::Enum(Type);
             }
 
-            _rEntity.m_Size = Core::Float3(
+            rEntity.m_Size = Core::Float3(
                 std::stof(SizeStrings[0]),
                 std::stof(SizeStrings[1]),
                 std::stof(SizeStrings[2])
             );
 
-            _rEntity.m_Position = Core::Float3(
+            rEntity.m_Position = Core::Float3(
                 std::stof(PositionStrings[0]),
                 std::stof(PositionStrings[1]),
                 std::stof(PositionStrings[2])
             );
 
-            _rEntity.m_AABB = Core::CAABB3<float>(
-                Core::Float3(_rEntity.m_Position[0], _rEntity.m_Position[1], _rEntity.m_Position[2]),
-                Core::Float3(_rEntity.m_Position[0] + _rEntity.m_Size[0], _rEntity.m_Position[1] + _rEntity.m_Size[1], _rEntity.m_Position[2] + _rEntity.m_Size[2])
+            rEntity.m_AABB = Core::CAABB3<float>(
+                Core::Float3(rEntity.m_Position[0], rEntity.m_Position[1], rEntity.m_Position[2]),
+                Core::Float3(rEntity.m_Position[0] + rEntity.m_Size[0], rEntity.m_Position[1] + rEntity.m_Size[1], rEntity.m_Position[2] + rEntity.m_Size[2])
             );
 
-            _rEntity.m_pMetaEntity = &_rMetaEntity;
+            rEntity.m_pMetaEntity = &rMetaEntity;
 
             EntityCount++;
         }
@@ -76,10 +83,10 @@ namespace Data
     {
         Core::CIDManager::BID ID = m_IdManager.Register(_Name);
 
-        CEntity& _rEntity = m_itemManager.CreateItem(ID);
-        _rEntity.m_Id = ID;
+        CEntity& rEntity = m_itemManager.CreateItem(ID);
+        rEntity.m_Id = ID;
 
-        return _rEntity;
+        return rEntity;
     }
 
     std::vector<Data::CEntity*> CEntitySystem::GetAllEntities()

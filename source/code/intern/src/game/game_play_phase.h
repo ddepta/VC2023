@@ -2,7 +2,7 @@
 #pragma once
 
 #include "game_phase.h"
-#include "data/data_event.h"
+#include "../data/data_event.h"
 
 namespace Game
 {
