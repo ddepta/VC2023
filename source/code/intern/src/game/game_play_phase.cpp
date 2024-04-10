@@ -38,6 +38,8 @@ namespace Game
 
     int CPlayPhase::InternOnLeave()
     {
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::Finished, &Finish);
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EscapePressed, &Exit);
 
         Logic::CPlayPhase::GetInstance().OnLeave();
         Gui  ::CPlayPhase::GetInstance().OnLeave();

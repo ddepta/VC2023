@@ -31,6 +31,9 @@ namespace Game
 
     int CMainMenuPhase::InternOnLeave()
     {
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EnterPressed, &CMainMenuPhase::OnStart);
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EscapePressed, &CMainMenuPhase::OnExit);
+
         Data::CMainMenuPhase::GetInstance().OnLeave();
         Gui ::CMainMenuPhase::GetInstance().OnLeave();
         Gfx ::CMainMenuPhase::GetInstance().OnLeave();

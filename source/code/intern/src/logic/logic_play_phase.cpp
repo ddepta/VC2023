@@ -17,5 +17,8 @@ namespace Logic
         CSystem::GetInstance().HandleInput();
     }
 
-    void CPlayPhase::OnLeave() {}
+    void CPlayPhase::OnLeave() 
+    {
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::DispatchInput, &CInputSystem::DispatchInputToLogic);
+    }
 }

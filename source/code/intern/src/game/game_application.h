@@ -36,6 +36,6 @@ namespace Game
 		CApplication();
 
 	private:
-		void RunPhases();
+		bool RunPhases();
 	};
 }

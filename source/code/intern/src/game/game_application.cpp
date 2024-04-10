@@ -41,8 +41,9 @@ namespace Game
     void CApplication::Run()
     {
         sf::Event event;
+        bool Running = true;
 
-        for (;;)
+        while(Running)
         {
             if (m_Window.isOpen() == false)
             {
@@ -62,7 +63,7 @@ namespace Game
                 }
             }
 
-            RunPhases();
+            Running = RunPhases();
         }
     }
 
@@ -70,7 +71,7 @@ namespace Game
     {
     }
 
-    void CApplication::RunPhases()
+    bool CApplication::RunPhases()
     {
         CPhase* pCurrentPhase = m_pPhases[m_CurrentPhase];
 
@@ -83,6 +84,11 @@ namespace Game
         {
             pCurrentPhase->OnLeave();
 
+            if (m_CurrentPhase == CPhase::Shutdown)
+            {
+                return false;
+            }
+
             m_CurrentPhase = NextPhase;
 
             pCurrentPhase = m_pPhases[m_CurrentPhase];
@@ -91,6 +97,8 @@ namespace Game
             
             pCurrentPhase->OnEnter();
         }
+
+        return true;
     }
 }
 

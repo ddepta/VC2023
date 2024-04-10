@@ -3,6 +3,7 @@
 #include "logic/logic_shutdown_phase.h"
 #include "gui/gui_shutdown_phase.h"
 #include "graphics/gfx_shutdown_phase.h"
+#include "game/game_application.h"
 
 namespace Game
 {
@@ -32,6 +33,9 @@ namespace Game
         Logic::CShutdownPhase::GetInstance().OnLeave();
         Gui  ::CShutdownPhase::GetInstance().OnLeave();
         Gfx  ::CShutdownPhase::GetInstance().OnLeave();
+
+        Game::CApplication& rApplication = Game::CApplication::GetInstance();
+        rApplication.m_Window.close();
 
         return 0;
     }
