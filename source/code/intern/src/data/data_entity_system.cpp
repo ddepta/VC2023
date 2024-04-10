@@ -1,6 +1,7 @@
 #include "data_entity_system.h"
 #include "data_meta_entity_system.h"
 #include "data_player_system.h"
+#include "data_score_system.h"
 #include "../core/core_splitstrings.h"
 
 #include <tinyxml2.h>
@@ -17,6 +18,8 @@ namespace Data
         CMetaEntitySystem& rMetaEntitySystem = CMetaEntitySystem::GetInstance();
 
         tinyxml2::XMLElement* pEntities = _rDocument.FirstChildElement("entities");
+
+        int MaxScore = 0;
 
         // Iterate over each entity
         for (tinyxml2::XMLElement* pXmlEntity = pEntities->FirstChildElement("entity"); pXmlEntity != nullptr; pXmlEntity = pXmlEntity->NextSiblingElement())
@@ -39,10 +42,15 @@ namespace Data
 
             CEntity& rEntity = CreateEntity(Name);
 
+            if (rMetaEntity.m_Name == "egg")
+            {
+                MaxScore++;
+            }
+
             if (rMetaEntity.m_Name == "player")
             {
-                Data::CPlayerSystem& playerSystem = Data::CPlayerSystem::GetInstance();
-                playerSystem.SetPlayer(&rEntity);
+                Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
+                rPlayerSystem.SetPlayer(&rEntity);
             }
 
             if (Type >= SEntityCategory::NumberOfMembers)
@@ -75,6 +83,9 @@ namespace Data
 
             EntityCount++;
         }
+
+        Data::CScoreSystem& rScoreSystem = Data::CScoreSystem::GetInstance();
+        rScoreSystem.SetMaxScore(MaxScore);
 
         return EntityCount;
     }

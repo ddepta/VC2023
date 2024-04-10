@@ -14,10 +14,31 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg" meta-entity="egg">
+  <entity name="egg_0_0" meta-entity="egg">
     <data>
       <type>2</type>
       <position>64.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_0_1" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>64.0;64.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_0_2" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>64.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_0_3" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>64.0;172.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
