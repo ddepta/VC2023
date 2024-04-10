@@ -23,6 +23,7 @@ namespace Data
     public:
         int Initialize(tinyxml2::XMLDocument& _rDocument);
         CEntity& CreateEntity(std::string _Name);
+        void DestroyEntity(CEntity& _rEntity);
         std::vector<Data::CEntity*> GetAllEntities();
 
     private:

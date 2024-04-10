@@ -8,8 +8,9 @@ namespace Data
         enum Enum
         {
             Character,
-            Ground,
-            Obstacle,
+            Rock,
+            Egg,
+            Finish,
             NumberOfMembers,
             Undefined = -1,
         };

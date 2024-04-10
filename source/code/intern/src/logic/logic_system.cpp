@@ -5,6 +5,8 @@
 #include "../data/data_entity_system.h"
 #include "../data/data_entity_category.h"
 #include "../data/data_player_system.h"
+#include "../data/data_score_system.h"
+#include "../data/data_event_system.h"
 
 namespace Logic
 {
@@ -62,17 +64,31 @@ namespace Logic
         );
 
         std::vector<Data::CEntity*> Entities = Data::CEntitySystem::GetInstance().GetAllEntities();
-        std::vector<Data::CEntity*> CollidingEntities;
+        std::vector<Data::CEntity*> Points;
+
+        bool WallCollision = false;
 
         for (Data::CEntity* pEntity : Entities)
         {
-            if (pEntity != nullptr && pEntity->m_Category == Data::SEntityCategory::Ground && NextPosition.Intersects(pEntity->m_AABB))
+            if (pEntity != nullptr && NextPosition.Intersects(pEntity->m_AABB))
             {
-                CollidingEntities.push_back(pEntity);
+                if (pEntity->m_Category == Data::SEntityCategory::Rock)
+                {
+                    WallCollision = true;
+                }
+                if (pEntity->m_Category == Data::SEntityCategory::Egg)
+                {
+                    Data::CEntitySystem::GetInstance().DestroyEntity(*pEntity);
+                    Data::CScoreSystem::GetInstance().IncreaseScore();
+                }
+                if (pEntity->m_Category == Data::SEntityCategory::Finish)
+                {
+                    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::Finished);
+                }
             }
         }
 
-        if (CollidingEntities.empty())
+        if (!WallCollision)
         {
             pPlayerEntity->m_Position = 
                 Core::Float3(

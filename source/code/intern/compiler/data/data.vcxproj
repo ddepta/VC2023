@@ -163,6 +163,7 @@
     <ClCompile Include="..\..\src\data\data_meta_entity.cpp" />
     <ClCompile Include="..\..\src\data\data_meta_entity_system.cpp" />
     <ClCompile Include="..\..\src\data\data_player_system.cpp" />
+    <ClCompile Include="..\..\src\data\data_score_system.cpp" />
     <ClCompile Include="..\..\src\data\data_shutdown_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_startup_phase.cpp" />
     <ClCompile Include="..\..\src\data\data_unload_phase.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="..\..\src\data\data_meta_entity.h" />
     <ClInclude Include="..\..\src\data\data_meta_entity_system.h" />
     <ClInclude Include="..\..\src\data\data_player_system.h" />
+    <ClInclude Include="..\..\src\data\data_score_system.h" />
     <ClInclude Include="..\..\src\data\data_sector.h" />
     <ClInclude Include="..\..\src\data\data_shutdown_phase.h" />
     <ClInclude Include="..\..\src\data\data_startup_phase.h" />

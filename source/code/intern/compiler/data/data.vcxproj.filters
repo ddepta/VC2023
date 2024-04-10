@@ -63,6 +63,9 @@
     <ClCompile Include="..\..\src\data\data_player_system.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\data\data_score_system.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\data\data_load_phase.h">
@@ -129,6 +132,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\data\data_player_system.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\data\data_score_system.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

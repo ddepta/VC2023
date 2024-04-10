@@ -14,4 +14,18 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
+  <entity name="egg" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>64.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="finish" meta-entity="finish">
+    <data>
+      <type>3</type>
+      <position>256.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
 </entities>

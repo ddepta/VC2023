@@ -8,11 +8,14 @@ namespace Gfx
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
 
-        m_BackgroundTexture.loadFromFile("..\\resources\\images\\background.png");
+        m_BackgroundTexture.loadFromFile("..\\resources\\images\\pattern.png");
         m_BackgroundTexture.setRepeated(true);
 
         sf::IntRect Rectangle(0, 0, 900, 600);
+        sf::FloatRect ViewBounds(0.0f, 0.0f, 900.0f, 600.0f);
         sf::Vector2f Size = rApplication.m_Window.getView().getSize();
+
+        rApplication.m_Window.setView(sf::View(ViewBounds));
 
         m_BackgroundSprite = sf::Sprite(m_BackgroundTexture, Rectangle);
         m_BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);
@@ -22,6 +25,8 @@ namespace Gfx
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
         sf::Vector2f Size = rApplication.m_Window.getView().getSize();
+
+        rApplication.m_Window.clear(sf::Color::Black);
 
         sf::Font Font;
         Font.loadFromFile("..\\resources\\font\\Berlin Sans FB Regular.ttf");

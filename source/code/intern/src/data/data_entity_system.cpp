@@ -89,6 +89,11 @@ namespace Data
         return rEntity;
     }
 
+    void CEntitySystem::DestroyEntity(CEntity& _rEntity)
+    {
+        m_itemManager.DestroyItem(_rEntity.m_Id);
+    }
+
     std::vector<Data::CEntity*> CEntitySystem::GetAllEntities()
     {
         return m_itemManager.GetAllItems();

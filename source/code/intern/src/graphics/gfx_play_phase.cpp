@@ -14,8 +14,22 @@ namespace Gfx
     void CPlayPhase::OnRun() 
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
-
         rApplication.m_Window.clear(sf::Color::Black);
+
+        sf::Vector2f Size = rApplication.m_Window.getView().getSize();
+
+        sf::Texture BackgroundTexture;
+        BackgroundTexture.loadFromFile("..\\resources\\images\\gras.png");
+        BackgroundTexture.setRepeated(true);
+
+        sf::Sprite BackgroundSprite;
+
+        sf::IntRect Rectangle(-1000, -1000, 3000, 3000);
+
+        BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
+        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);
+
+        rApplication.m_Window.draw(BackgroundSprite);
 
         for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
         {
