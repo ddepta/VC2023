@@ -23,7 +23,7 @@ namespace Game
         static void Exit(Data::CEvent& _rEvent);
 
     private:
-        CPlayPhase() : nextRunPhase(CPhase::Play) {};
+        CPlayPhase() : m_NextRunPhase(CPhase::Play) {};
 
     private:
         int InternOnEnter() override;
@@ -31,6 +31,6 @@ namespace Game
         int InternOnRun() override;
 
     private:
-        CPhase::EPhase nextRunPhase;
+        CPhase::EPhase m_NextRunPhase;
     };
 }

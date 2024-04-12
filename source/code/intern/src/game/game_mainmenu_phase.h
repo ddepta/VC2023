@@ -21,10 +21,10 @@ namespace Game
         static void OnExit(Data::CEvent& _rEvent);
 
     private:
-        CMainMenuPhase() : nextRunPhase(CPhase::MainMenu) {};
+        CMainMenuPhase() : m_NextRunPhase(CPhase::MainMenu) {};
 
     private:
-        CPhase::EPhase nextRunPhase;
+        CPhase::EPhase m_NextRunPhase;
 
     private:
         int InternOnEnter() override;

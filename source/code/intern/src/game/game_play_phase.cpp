@@ -11,7 +11,7 @@ namespace Game
 {
     int CPlayPhase::InternOnEnter()
     {
-        nextRunPhase = EPhase::Play;
+        m_NextRunPhase = EPhase::Play;
 
         Core::Time::Reset();
 
@@ -33,7 +33,7 @@ namespace Game
         Gui::CPlayPhase::GetInstance().OnRun();
         Gfx::CPlayPhase::GetInstance().OnRun();
 
-        return nextRunPhase;
+        return m_NextRunPhase;
     }
 
     int CPlayPhase::InternOnLeave()
@@ -50,12 +50,12 @@ namespace Game
 
     void CPlayPhase::Finish(Data::CEvent& _rEvent)
     {
-        CPlayPhase::GetInstance().nextRunPhase = CPhase::UnloadMap;
+        CPlayPhase::GetInstance().m_NextRunPhase = CPhase::UnloadMap;
     }
 
     void CPlayPhase::Exit(Data::CEvent& _rEvent)
     {
-        CPlayPhase::GetInstance().nextRunPhase = CPhase::UnloadMap;
+        CPlayPhase::GetInstance().m_NextRunPhase = CPhase::UnloadMap;
     }
 }
 
