@@ -5,26 +5,25 @@
 namespace Gfx
 {
     void CMainMenuPhase::OnEnter()
-    {
-        Game::CApplication& rApplication = Game::CApplication::GetInstance();
-
-        m_BackgroundTexture.loadFromFile("..\\resources\\images\\pattern.png");
-        m_BackgroundTexture.setRepeated(true);
-
-        sf::IntRect Rectangle(0, 0, 900, 600);
-        sf::FloatRect ViewBounds(0.0f, 0.0f, 900.0f, 600.0f);
-        sf::Vector2f Size = rApplication.m_Window.getView().getSize();
-
-        rApplication.m_Window.setView(sf::View(ViewBounds));
-
-        m_BackgroundSprite = sf::Sprite(m_BackgroundTexture, Rectangle);
-        m_BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);
-    }
+    {}
 
     void CMainMenuPhase::OnRun()
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
         sf::Vector2f Size = rApplication.m_Window.getView().getSize();
+
+        sf::Texture BackgroundTexture;
+
+        BackgroundTexture.loadFromFile("..\\resources\\images\\pattern.png");
+        BackgroundTexture.setRepeated(true);
+
+        sf::IntRect Rectangle(0, 0, 900, 600);
+        sf::FloatRect ViewBounds(0.0f, 0.0f, 900.0f, 600.0f);
+
+        rApplication.m_Window.setView(sf::View(ViewBounds));
+
+        sf::Sprite BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
+        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);
 
         rApplication.m_Window.clear(sf::Color::Black);
 
@@ -86,7 +85,7 @@ namespace Gfx
 
         rApplication.m_Window.clear(sf::Color::Black);
 
-        rApplication.m_Window.draw(m_BackgroundSprite);
+        rApplication.m_Window.draw(BackgroundSprite);
         rApplication.m_Window.draw(TitleText);
         rApplication.m_Window.draw(StartText);
         rApplication.m_Window.draw(ExitText);
