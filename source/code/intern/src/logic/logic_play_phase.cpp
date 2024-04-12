@@ -9,7 +9,7 @@ namespace Logic
 {
     void CPlayPhase::OnEnter() 
     {
-        Data::CEventSystem::GetInstance().Register(Data::SEventType::DispatchInput, &CInputSystem::DispatchInputToLogic);
+        Data::CEventSystem::GetInstance().Register(Data::SEventType::DispatchInput, &CInputSystem::DispatchInput);
     }
 
     void CPlayPhase::OnRun() 
@@ -19,6 +19,6 @@ namespace Logic
 
     void CPlayPhase::OnLeave() 
     {
-        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::DispatchInput, &CInputSystem::DispatchInputToLogic);
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::DispatchInput, &CInputSystem::DispatchInput);
     }
 }

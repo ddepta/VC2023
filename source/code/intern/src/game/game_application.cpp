@@ -12,6 +12,7 @@
 #include "data/data_event_system.h"
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 namespace Game
 {
@@ -59,7 +60,30 @@ namespace Game
 
                 if (event.type == sf::Event::KeyPressed)
                 {
-                    Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchEvent, event.key.code);
+                    if (event.key.code == sf::Keyboard::Key::Escape)
+                    {
+                        Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::EscapePressed);
+                    }
+                    else if (event.key.code == sf::Keyboard::Key::Enter)
+                    {
+                        Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::EnterPressed);
+                    }
+                    else if (event.key.code == sf::Keyboard::Key::Up || event.key.code == sf::Keyboard::Key::W)
+                    {
+                        Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::UpPressed);
+                    }
+                    else if (event.key.code == sf::Keyboard::Key::Down || event.key.code == sf::Keyboard::Key::S)
+                    {
+                        Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::DownPressed);
+                    }
+                    else if (event.key.code == sf::Keyboard::Key::Left || event.key.code == sf::Keyboard::Key::A)
+                    {
+                        Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::LeftPressed);
+                    }
+                    else if (event.key.code == sf::Keyboard::Key::Right || event.key.code == sf::Keyboard::Key::D)
+                    {
+                        Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::DispatchInput, Data::SEventType::RightPressed);
+                    }
                 }
             }
 

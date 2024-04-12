@@ -29,7 +29,7 @@ namespace Logic
             bool InputQueueIsEmpty() const;
 
             // event callbacks
-            static void DispatchInputToLogic(Data::CEvent& _rEvent);
+            static void DispatchInput(Data::CEvent& _rEvent);
 
         private:
             CInputSystem() {}

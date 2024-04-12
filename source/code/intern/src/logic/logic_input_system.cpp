@@ -33,7 +33,7 @@ namespace Logic
         return m_InputQueue.empty();
     }
 
-    void CInputSystem::DispatchInputToLogic(Data::CEvent& _rEvent)
+    void CInputSystem::DispatchInput(Data::CEvent& _rEvent)
     {
         CInput& rEvent = *(new CInput());
         rEvent.SetType(Data::SEventType::EEventType(_rEvent.GetData()));

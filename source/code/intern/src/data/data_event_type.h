@@ -6,7 +6,6 @@ namespace Data
     {
         enum EEventType
         {
-            DispatchEvent,
             DispatchInput,
             Finished,
             EscapePressed,
