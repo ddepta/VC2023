@@ -5,6 +5,7 @@
 #include "gui/gui_play_phase.h"
 #include "graphics/gfx_play_phase.h"
 #include "data/data_event_system.h"
+#include "data/data_score_system.h"
 #include <core/core_time.h>
 
 namespace Game
@@ -13,7 +14,7 @@ namespace Game
     {
         m_NextRunPhase = EPhase::Play;
 
-        Core::Time::Reset();
+        Data::CScoreSystem::GetInstance().ResetScore();
 
         Data::CEventSystem::GetInstance().Register(Data::SEventType::Finished, &Finish);
         Data::CEventSystem::GetInstance().Register(Data::SEventType::EscapePressed, &Exit);

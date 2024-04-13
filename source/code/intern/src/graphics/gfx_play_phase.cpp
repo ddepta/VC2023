@@ -62,15 +62,6 @@ namespace Gfx
         ScoreText.setOutlineThickness(1.5f);
         ScoreText.setStyle(sf::Text::Bold);
 
-        auto XPosition = View.getCenter().x - Size.x / 2 + 10.0f;
-        auto YPosition = View.getCenter().y - Size.y / 2 + 3.0f;
-
-        ScoreLabelText.setPosition(XPosition, YPosition);
-        ScoreText.setPosition(XPosition + 145.0f - ScoreText.getGlobalBounds().width, YPosition);
-
-        rApplication.m_Window.draw(ScoreLabelText);
-        rApplication.m_Window.draw(ScoreText);
-
         for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
         {
             if (pEntity != nullptr)
@@ -96,6 +87,15 @@ namespace Gfx
                 rApplication.m_Window.draw(Sprite);
             }
         }
+
+        auto XPosition = View.getCenter().x - Size.x / 2 + 10.0f;
+        auto YPosition = View.getCenter().y - Size.y / 2 + 3.0f;
+
+        ScoreLabelText.setPosition(XPosition, YPosition);
+        ScoreText.setPosition(XPosition + 145.0f - ScoreText.getGlobalBounds().width, YPosition);
+
+        rApplication.m_Window.draw(ScoreLabelText);
+        rApplication.m_Window.draw(ScoreText);
 
         rApplication.m_Window.display();
     }
