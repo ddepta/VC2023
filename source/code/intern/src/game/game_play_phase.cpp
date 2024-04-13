@@ -49,12 +49,12 @@ namespace Game
         return 0;
     }
 
-    void CPlayPhase::Finish(Data::CEvent& _rEvent)
+    void CPlayPhase::Finish(Data::CEvent&)
     {
         CPlayPhase::GetInstance().m_NextRunPhase = CPhase::UnloadMap;
     }
 
-    void CPlayPhase::Exit(Data::CEvent& _rEvent)
+    void CPlayPhase::Exit(Data::CEvent&)
     {
         CPlayPhase::GetInstance().m_NextRunPhase = CPhase::UnloadMap;
     }

@@ -68,8 +68,6 @@ namespace Gfx
             {
                 if (pEntity->m_pMetaEntity->m_Name == "player")
                 {
-                    sf::Vector2f Size = rApplication.m_Window.getView().getSize();
-
                     float X = pEntity->m_Position[0];
                     float Y = pEntity->m_Position[1];
 

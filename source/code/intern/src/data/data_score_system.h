@@ -22,7 +22,7 @@ namespace Data
         void ResetScore();
 
     private:
-        CScoreSystem() : m_Score(0) {};
+        CScoreSystem() : m_Score(0), m_MaxScore(-1) {};
 
     private:
         int m_Score;
