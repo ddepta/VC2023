@@ -23,16 +23,16 @@ namespace Logic
             switch (pCurrentInput->GetType())
             {
                 case Data::SEventType::UpPressed:
-                    MovePlayer(Core::Float2(0.0f, -Movement));
+                    MovePlayer(Core::Float2(0.0f, -Movement), 0);
                     break;
                 case Data::SEventType::DownPressed:
-                    MovePlayer(Core::Float2(0.0f, Movement));
+                    MovePlayer(Core::Float2(0.0f, Movement), 0);
                     break;
                 case Data::SEventType::LeftPressed:
-                    MovePlayer(Core::Float2(-Movement, 0.0f));
+                    MovePlayer(Core::Float2(-Movement, 0.0f), -1);
                     break;
                 case Data::SEventType::RightPressed:
-                    MovePlayer(Core::Float2(Movement, 0.0f));
+                    MovePlayer(Core::Float2(Movement, 0.0f), 1);
                     break;
                 default:
                     break;
@@ -42,7 +42,7 @@ namespace Logic
         }
     }
 
-    void CSystem::MovePlayer(Core::Float2 _Direction)
+    void CSystem::MovePlayer(Core::Float2 _Direction, int _LookDirection)
     {
         Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
         Data::CEntity* pPlayerEntity = rPlayerSystem.GetPlayer();
@@ -86,6 +86,15 @@ namespace Logic
                     Data::CEventSystem::GetInstance().FireEvent(Data::SEventType::Finished);
                 }
             }
+        }
+
+        if (_LookDirection == -1)
+        {
+            rPlayerSystem.SetPlayerDirection(Data::CPlayerSystem::Left);
+        }
+        if (_LookDirection == 1)
+        {
+            rPlayerSystem.SetPlayerDirection(Data::CPlayerSystem::Right);
         }
 
         if (!WallCollision)

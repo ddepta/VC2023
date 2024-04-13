@@ -17,13 +17,13 @@ namespace Gfx
         BackgroundTexture.loadFromFile("..\\resources\\images\\pattern.png");
         BackgroundTexture.setRepeated(true);
 
-        sf::IntRect Rectangle(0, 0, 900, 600);
-        sf::FloatRect ViewBounds(0.0f, 0.0f, 900.0f, 600.0f);
+        sf::IntRect Rectangle(0, 0, Size.x, Size.y);
+        sf::FloatRect ViewBounds(0.0f, 0.0f, Size.x, Size.y);
 
         rApplication.m_Window.setView(sf::View(ViewBounds));
 
         sf::Sprite BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
-        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);
+        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top);
 
         rApplication.m_Window.clear(sf::Color::Black);
 

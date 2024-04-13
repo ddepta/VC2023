@@ -17,14 +17,24 @@ namespace Data
         CPlayerSystem& operator = (const CPlayerSystem&) = delete;
 
     public:
+        enum EDirection
+        {
+            Left,
+            Right
+        };
+
+    public:
         CEntity* GetPlayer();
-        void SetPlayer(CEntity* m_pPlayer);
+        void SetPlayer(CEntity* _pPlayer);
+        EDirection GetPlayerDirection();
+        void SetPlayerDirection(EDirection _Direction);
 
     private:
-        CPlayerSystem() : m_pPlayer(nullptr)
+        CPlayerSystem() : m_pPlayer(nullptr), m_PlayerDirection(Right)
         {};
 
     private:
         CEntity* m_pPlayer;
+        EDirection m_PlayerDirection;
     };
 }
