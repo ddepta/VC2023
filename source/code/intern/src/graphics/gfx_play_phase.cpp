@@ -28,7 +28,7 @@ namespace Gfx
 
         sf::Sprite BackgroundSprite;
 
-        sf::IntRect Rectangle(-1000, -1000, 3000, 3000);
+        sf::IntRect Rectangle(0, 0, 2624, 2624);
 
         BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
         BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);

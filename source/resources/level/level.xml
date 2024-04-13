@@ -1,51 +1,4509 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<entities>
-  <entity name="player" meta-entity="player">
-    <data>
-      <type>0</type>
-      <position>128.0;128.0;0.0</position>
-      <size>64.0;64.0;64.0</size>
-    </data>
-  </entity>
-  <entity name="rock_0_0" meta-entity="rock">
+﻿<entities>
+  <entity name="hedge_0_0" meta-entity="hedge">
     <data>
       <type>1</type>
       <position>0.0;0.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_0_0" meta-entity="egg">
+  <entity name="hedge_1_0" meta-entity="hedge">
     <data>
-      <type>2</type>
+      <type>1</type>
       <position>64.0;0.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_0_1" meta-entity="egg">
+  <entity name="hedge_2_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>128.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_3_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>192.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_4_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>256.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_5_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>320.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_6_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>384.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_7_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>448.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_8_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>512.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_9_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>576.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_10_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>640.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_11_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>704.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_12_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>768.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_13_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>832.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_14_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>896.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_15_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>960.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_16_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1024.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_17_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1088.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_18_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1152.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_19_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1216.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_20_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1280.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_21_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1344.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_22_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1408.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_23_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1472.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_24_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1536.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_25_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1600.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_26_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1664.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_27_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1728.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_28_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1792.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_29_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1856.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_30_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1920.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_31_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1984.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_32_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2048.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_33_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2112.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_34_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2176.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_35_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2240.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_36_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2304.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_37_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2368.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_38_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2432.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_39_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2496.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_0" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;0.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_1" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;64.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_1_1" meta-entity="egg">
     <data>
       <type>2</type>
       <position>64.0;64.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_0_2" meta-entity="egg">
+  <entity name="block_17_1" meta-entity="block">
     <data>
-      <type>2</type>
-      <position>64.0;128.0;0.0</position>
+      <type>1</type>
+      <position>1088.0;64.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_0_3" meta-entity="egg">
+  <entity name="block_23_1" meta-entity="block">
     <data>
-      <type>2</type>
-      <position>64.0;172.0;0.0</position>
+      <type>1</type>
+      <position>1472.0;64.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="finish" meta-entity="finish">
+  <entity name="hedge_40_1" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;64.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_2" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_2_2" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>128.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_5_2" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>320.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_8_2" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>512.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_18_2" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1152.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_22_2" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1408.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_32_2" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2048.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_35_2" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2240.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_38_2" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2432.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_2" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;128.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_3" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_4_3" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>256.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_7_3" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>448.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_17_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1088.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_18_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1152.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_19_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1216.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_20_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1280.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_21_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1344.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_22_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1408.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_23_3" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1472.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_33_3" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2112.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_36_3" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2304.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_3" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;192.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_4" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_3_4" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>192.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_6_4" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>384.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_16_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1024.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_17_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1088.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_19_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1216.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_20_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1280.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_21_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1344.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_23_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1472.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_24_4" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1536.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_34_4" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2176.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_37_4" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2368.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_4" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;256.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_5" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_2_5" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>128.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_5_5" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>320.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_15_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>960.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_16_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1024.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_17_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1088.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_18_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1152.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_19_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1216.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_20_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1280.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_21_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1344.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_22_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1408.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_23_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1472.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_24_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1536.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_5" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_35_5" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2240.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_38_5" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2432.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_5" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;320.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_6" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_4_6" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>256.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_15_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>960.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_17_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1088.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_18_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1152.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_19_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1216.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_20_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1280.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_21_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1344.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_22_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1408.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_23_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1472.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_6" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_36_6" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2304.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_6" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;384.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_7" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_3_7" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>192.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_15_7" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>960.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_17_7" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1088.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_23_7" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1472.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_7" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_37_7" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2368.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_7" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;448.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_8" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_2_8" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>128.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_18_8" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1152.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_19_8" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1216.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_20_8" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>1280.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_21_8" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1344.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_22_8" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1408.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_38_8" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2432.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_8" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;512.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_9" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;576.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_9" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;576.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_10" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;640.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_10" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;640.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_10" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;640.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_11" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;704.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_21_11" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1344.0;704.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_11" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;704.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_38_11" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2432.0;704.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_11" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;704.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_12" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_2_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>128.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_3_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>192.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_4_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>256.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_5_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>320.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_6_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>384.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_7_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>448.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_8_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>512.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_9_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>576.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_10_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>640.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_12_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>768.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_13_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>832.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_14_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>896.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_15_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>960.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_12" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_21_12" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1344.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_12" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_27_12" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1728.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_30_12" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>1920.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_31_12" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>1984.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_34_12" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2176.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_35_12" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2240.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_38_12" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2432.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_12" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;768.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_13" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_13" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_13" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_21_13" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1344.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_22_13" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1408.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_13" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_26_13" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1664.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_27_13" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1728.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_28_13" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1792.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_30_13" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>1920.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_31_13" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>1984.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_33_13" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2112.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_34_13" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2176.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_37_13" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2368.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_38_13" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2432.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_13" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;832.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_14" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_1_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>64.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_3_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>192.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_8_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>512.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_10_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>640.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_13_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>832.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_14" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_17_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1088.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_18_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1152.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_19_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1216.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_20_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1280.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_21_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1344.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_22_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1408.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_23_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1472.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_24_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1536.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_26_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1664.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_27_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1728.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_28_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1792.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_29_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1856.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_30_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1920.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_31_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1984.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_34_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2176.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_35_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2240.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_36_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2304.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_37_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2368.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_38_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2432.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_39_14" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2496.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_14" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;896.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_15" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_15" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_18_15" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1152.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_20_15" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1280.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_22_15" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1408.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_24_15" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1536.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_31_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1984.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_39_15" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2496.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_15" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;960.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_16" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_3_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>192.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_10_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>640.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_27_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1728.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_28_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1792.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_29_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1856.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_31_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1984.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_35_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2240.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_36_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2304.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_37_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2368.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_39_16" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2496.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_16" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1024.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_17" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_11_17" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>704.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_17" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_18_17" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1152.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_20_17" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1280.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_22_17" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1408.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_24_17" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1536.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_27_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1728.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_28_17" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>1792.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_29_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1856.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_31_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1984.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_35_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2240.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_37_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2368.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_39_17" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2496.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_17" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1088.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_18" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_1_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>64.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_3_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>192.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_6_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>384.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_18" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_27_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1728.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_29_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1856.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_30_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1920.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_31_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1984.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_35_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2240.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_37_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2368.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_38_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2432.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_39_18" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2496.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_18" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1152.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_19" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_19" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_19" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_19" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_18_19" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1152.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_20_19" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1280.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_22_19" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1408.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_24_19" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1536.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_19" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_27_19" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1728.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_19" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_35_19" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2240.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_19" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1216.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_20" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_3_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>192.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_6_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>384.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_10_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>640.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_13_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>832.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_20" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_21_20" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>1344.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_25_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1600.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_27_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1728.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_28_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1792.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_29_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1856.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_30_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1920.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_31_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>1984.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_32_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2048.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_33_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2112.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_35_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2240.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_36_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2304.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_37_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2368.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_38_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2432.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_39_20" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>2496.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_20" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1280.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_21" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_21" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_21" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_21" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_18_21" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1152.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_20_21" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1280.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_22_21" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1408.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_24_21" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1536.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_21" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1344.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_22" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_10_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>640.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_13_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>832.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_15_22" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>960.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_22" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_22" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_22" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_33_22" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2112.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_22" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_22" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_22" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1408.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_23" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_23" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_23" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_23" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_23" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_23" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_18_23" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1152.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_20_23" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1280.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_22_23" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1408.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_24_23" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1536.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_23" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_23" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_33_23" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2112.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_23" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_23" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_23" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1472.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_24" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_6_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>384.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_12_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>768.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_13_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>832.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_24" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_24" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_24" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_33_24" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2112.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_34_24" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2176.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_35_24" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2240.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_36_24" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2304.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_24" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1536.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_25" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_25" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_25" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_25" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_25" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_18_25" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1152.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_20_25" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1280.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_22_25" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1408.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_24_25" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>1536.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_29_25" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1856.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_30_25" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1920.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_25" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_25" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_33_25" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2112.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_34_25" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2176.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_35_25" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2240.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_36_25" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>2304.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_25" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1600.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_26" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_2_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>128.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_3_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>192.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_4_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>256.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_5_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>320.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_6_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>384.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_7_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>448.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_8_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>512.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_9_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>576.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_13_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>832.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_14_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>896.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_15_26" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>960.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_26" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_29_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1856.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_30_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1920.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_33_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2112.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_26" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_26" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1664.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_27" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="block_11_27" meta-entity="block">
+    <data>
+      <type>1</type>
+      <position>704.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_27" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_29_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1856.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_30_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1920.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_33_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2112.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_27" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_27" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1728.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_28" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_1_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>64.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_2_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>128.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_3_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>192.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_5_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>320.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_6_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>384.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_7_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>448.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_8_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>512.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_9_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>576.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_10_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>640.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_11_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>704.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_12_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>768.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_13_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>832.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_14_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>896.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_16_28" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>1024.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_29_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1856.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_30_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1920.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_33_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2112.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_28" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_28" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1792.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_29" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_29" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_29" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_33_29" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>2112.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_29" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_29" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_29" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1856.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_30" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1920.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_31_30" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1984.0;1920.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_32_30" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2048.0;1920.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_34_30" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2176.0;1920.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_35_30" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>2240.0;1920.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_30" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1920.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_31" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;1984.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_31" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;1984.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_32" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_2_32" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>128.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_9_32" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>576.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_10_32" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>640.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_11_32" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>704.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_15_32" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>960.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_16_32" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1024.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_17_32" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1088.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_22_32" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1408.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_23_32" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1472.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_32" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_29_32" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1856.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_30_32" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1920.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_31_32" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1984.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_38_32" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2432.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_32" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2048.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_33" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_3_33" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>192.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_8_33" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>512.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_9_33" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>576.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_10_33" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>640.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_14_33" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>896.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_16_33" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1024.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_18_33" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1152.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_21_33" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1344.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_23_33" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1472.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_25_33" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1600.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_28_33" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1792.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_30_33" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1920.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_32_33" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>2048.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_37_33" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2368.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_33" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2112.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_34" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_4_34" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>256.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_8_34" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>512.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_9_34" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>576.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="egg_12_34" meta-entity="egg">
+    <data>
+      <type>2</type>
+      <position>768.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_14_34" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>896.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_15_34" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>960.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_16_34" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1024.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_17_34" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1088.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_18_34" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1152.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_21_34" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1344.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_22_34" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1408.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_23_34" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1472.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_34" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_25_34" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1600.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_28_34" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1792.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_29_34" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1856.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_30_34" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1920.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_31_34" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1984.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_32_34" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>2048.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_36_34" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2304.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_34" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2176.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_35" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_2_35" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>128.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_5_35" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>320.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_8_35" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>512.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_9_35" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>576.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_10_35" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>640.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_14_35" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>896.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_15_35" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>960.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_16_35" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1024.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_17_35" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1088.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_18_35" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1152.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_21_35" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1344.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_22_35" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1408.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_23_35" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1472.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_24_35" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1536.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_25_35" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1600.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_28_35" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1792.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_29_35" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1856.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_30_35" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1920.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_31_35" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1984.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_32_35" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>2048.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_35_35" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2240.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_38_35" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2432.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_35" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2240.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_36" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_3_36" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>192.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_6_36" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>384.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_9_36" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>576.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_10_36" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>640.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="yellow_11_36" meta-entity="yellow">
+    <data>
+      <type>1</type>
+      <position>704.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_14_36" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>896.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_16_36" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1024.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="blue_18_36" meta-entity="blue">
+    <data>
+      <type>1</type>
+      <position>1152.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_21_36" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1344.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_23_36" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1472.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="red_25_36" meta-entity="red">
+    <data>
+      <type>1</type>
+      <position>1600.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_28_36" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1792.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_30_36" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>1920.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="orange_32_36" meta-entity="orange">
+    <data>
+      <type>1</type>
+      <position>2048.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_34_36" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2176.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_37_36" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2368.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_36" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2304.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_37" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2368.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_4_37" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>256.0;2368.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_7_37" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>448.0;2368.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_33_37" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2112.0;2368.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_36_37" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2304.0;2368.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_37" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2368.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_38" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_2_38" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>128.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_5_38" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>320.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_8_38" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>512.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_32_38" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2048.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="rock_35_38" meta-entity="rock">
+    <data>
+      <type>1</type>
+      <position>2240.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="stone_38_38" meta-entity="stone">
+    <data>
+      <type>1</type>
+      <position>2432.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_38" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2432.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_39" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2496.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="player" meta-entity="player">
+    <data>
+      <type>0</type>
+      <position>1280.0;2496.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_39" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2496.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_0_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>0.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_1_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>64.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_2_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>128.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_3_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>192.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_4_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>256.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_5_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>320.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_6_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>384.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_7_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>448.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_8_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>512.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_9_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>576.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_10_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>640.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_11_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>704.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_12_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>768.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_13_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>832.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_14_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>896.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_15_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>960.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_16_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1024.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_17_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1088.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_18_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1152.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_19_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1216.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="finish_20_40" meta-entity="finish">
     <data>
       <type>3</type>
-      <position>256.0;0.0;0.0</position>
+      <position>1280.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_21_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1344.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_22_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1408.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_23_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1472.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_24_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1536.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_25_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1600.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_26_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1664.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_27_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1728.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_28_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1792.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_29_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1856.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_30_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1920.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_31_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>1984.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_32_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2048.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_33_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2112.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_34_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2176.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_35_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2240.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_36_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2304.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_37_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2368.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_38_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2432.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_39_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2496.0;2560.0;0.0</position>
+      <size>64.0;64.0;64.0</size>
+    </data>
+  </entity>
+  <entity name="hedge_40_40" meta-entity="hedge">
+    <data>
+      <type>1</type>
+      <position>2560.0;2560.0;0.0</position>
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>

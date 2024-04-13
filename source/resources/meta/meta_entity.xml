@@ -18,6 +18,69 @@
       <texture value="rock.png"/>
     </graphics>
   </meta-entity>
+  <meta-entity name="stone">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="stone.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="block">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="block.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="blue">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="blue.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="orange">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="orange.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="red">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="red.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="yellow">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="yellow.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="hedge">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="hedge.png"/>
+    </graphics>
+  </meta-entity>
   <meta-entity name="egg">
     <data>
       <size value="0.0"/>

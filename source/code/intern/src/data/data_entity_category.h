@@ -8,7 +8,7 @@ namespace Data
         enum Enum
         {
             Character,
-            Rock,
+            Obstacle,
             Egg,
             Finish,
             NumberOfMembers,

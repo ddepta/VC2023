@@ -72,7 +72,7 @@ namespace Logic
         {
             if (pEntity != nullptr && NextPosition.Intersects(pEntity->m_AABB))
             {
-                if (pEntity->m_Category == Data::SEntityCategory::Rock)
+                if (pEntity->m_Category == Data::SEntityCategory::Obstacle)
                 {
                     WallCollision = true;
                 }
