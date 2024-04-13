@@ -21,7 +21,11 @@ namespace Gfx
         rApplication.m_Window.clear(sf::Color::Black);
 
         sf::View View = rApplication.m_Window.getView();
-        sf::Vector2f Size = rApplication.m_Window.getView().getSize();
+
+        sf::Vector2f ViewSize = rApplication.m_Window.getView().getSize();
+        sf::Vector2u WindowSize = rApplication.m_Window.getSize();
+
+        View.setSize(WindowSize.x, WindowSize.y);
 
         sf::Texture BackgroundTexture;
         BackgroundTexture.loadFromFile("..\\resources\\images\\gras.png");
@@ -99,8 +103,8 @@ namespace Gfx
         ScoreText.setOutlineThickness(1.5f);
         ScoreText.setStyle(sf::Text::Bold);
 
-        auto XPosition = View.getCenter().x - Size.x / 2 + 10.0f;
-        auto YPosition = View.getCenter().y - Size.y / 2 + 3.0f;
+        auto XPosition = View.getCenter().x - ViewSize.x / 2 + 10.0f;
+        auto YPosition = View.getCenter().y - ViewSize.y / 2 + 3.0f;
 
         ScoreLabelText.setPosition(XPosition, YPosition);
         ScoreText.setPosition(XPosition + 145.0f - ScoreText.getGlobalBounds().width, YPosition);
