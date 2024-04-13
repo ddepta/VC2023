@@ -11,4 +11,14 @@ namespace Data
     {
         this->m_pPlayer = _pPlayer;
     }
+
+    CPlayerSystem::EDirection CPlayerSystem::GetPlayerDirection()
+    {
+        return m_PlayerDirection;
+    }
+
+    void CPlayerSystem::SetPlayerDirection(EDirection _Direction)
+    {
+        this->m_PlayerDirection = _Direction;
+    }
 }

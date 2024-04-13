@@ -5,6 +5,7 @@
 #include "data/data_entity.h"
 #include "data/data_entity_system.h"
 #include "data/data_score_system.h"
+#include "data/data_player_system.h"
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics/Text.hpp>
@@ -35,6 +36,42 @@ namespace Gfx
 
         rApplication.m_Window.draw(BackgroundSprite);
 
+        Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
+
+        for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
+        {
+            if (pEntity != nullptr)
+            {
+
+                sf::Texture* pTexture = static_cast<sf::Texture*>(pEntity->m_pMetaEntity->m_Facets[Data::CMetaEntity::SFacetType::GraphicsFacet]);
+                assert(pTexture != nullptr);
+
+                sf::Sprite Sprite(*pTexture);
+                Sprite.setPosition(pEntity->m_Position[0], pEntity->m_Position[1]);
+
+                if (pEntity->m_pMetaEntity->m_Name == "player")
+                {
+                    float X = pEntity->m_Position[0];
+                    float Y = pEntity->m_Position[1];
+
+                    View.setCenter(X, Y);
+
+                    rApplication.m_Window.setView(View);
+
+                    if (rPlayerSystem.GetPlayerDirection() == Data::CPlayerSystem::Right)
+                    {
+                        Sprite.setTextureRect(sf::IntRect(0, 0, 64, 64));
+                    }
+                    else
+                    {
+                        Sprite.setTextureRect(sf::IntRect(64, 0, -64, 64));
+                    }
+                }
+
+                rApplication.m_Window.draw(Sprite);
+            }
+        }
+
         sf::Font Font;
         Font.loadFromFile("..\\resources\\font\\Berlin Sans FB Regular.ttf");
 
@@ -61,30 +98,6 @@ namespace Gfx
         ScoreText.setOutlineColor(OutlineColor);
         ScoreText.setOutlineThickness(1.5f);
         ScoreText.setStyle(sf::Text::Bold);
-
-        for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
-        {
-            if (pEntity != nullptr)
-            {
-                if (pEntity->m_pMetaEntity->m_Name == "player")
-                {
-                    float X = pEntity->m_Position[0];
-                    float Y = pEntity->m_Position[1];
-
-                    View.setCenter(X, Y);
-
-                    rApplication.m_Window.setView(View);
-                }
-
-                sf::Texture* pTexture = static_cast<sf::Texture*>(pEntity->m_pMetaEntity->m_Facets[Data::CMetaEntity::SFacetType::GraphicsFacet]);
-                assert(pTexture != nullptr);
-
-                sf::Sprite Sprite(*pTexture);
-                Sprite.setPosition(pEntity->m_Position[0], pEntity->m_Position[1]);
-
-                rApplication.m_Window.draw(Sprite);
-            }
-        }
 
         auto XPosition = View.getCenter().x - Size.x / 2 + 10.0f;
         auto YPosition = View.getCenter().y - Size.y / 2 + 3.0f;

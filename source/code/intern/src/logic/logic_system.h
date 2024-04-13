@@ -20,7 +20,7 @@ namespace Logic
         void HandleInput();
 
     private:
-        void MovePlayer(Core::Float2 _Direction);
+        void MovePlayer(Core::Float2 _Direction, int _LookDirection);
 
     private:
         CSystem()
