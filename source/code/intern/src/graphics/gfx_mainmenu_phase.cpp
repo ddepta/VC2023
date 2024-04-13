@@ -1,6 +1,7 @@
 ﻿#include "gfx_mainmenu_phase.h"
 #include "game/game_application.h"
 #include <SFML/Graphics/Text.hpp>
+#include <iostream>
 
 namespace Gfx
 {
@@ -10,20 +11,23 @@ namespace Gfx
     void CMainMenuPhase::OnRun()
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
-        sf::Vector2f Size = rApplication.m_Window.getView().getSize();
+        sf::Vector2f ViewSize = rApplication.m_Window.getView().getSize();
+        sf::Vector2u WindowSize = rApplication.m_Window.getSize();
 
         sf::Texture BackgroundTexture;
 
         BackgroundTexture.loadFromFile("..\\resources\\images\\pattern.png");
         BackgroundTexture.setRepeated(true);
 
-        sf::IntRect Rectangle(0, 0, Size.x, Size.y);
-        sf::FloatRect ViewBounds(0.0f, 0.0f, Size.x, Size.y);
+        std::cout << rApplication.m_Window.getSize().x << "\n";
 
-        rApplication.m_Window.setView(sf::View(ViewBounds));
+        sf::IntRect Position(0, 0, WindowSize.x, WindowSize.y);
+        sf::FloatRect ViewPort(0.0f, 0.0f, WindowSize.x, WindowSize.y);
 
-        sf::Sprite BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
-        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top);
+        rApplication.m_Window.setView(sf::View(ViewPort));
+
+        sf::Sprite BackgroundSprite = sf::Sprite(BackgroundTexture, Position);
+        BackgroundSprite.setPosition((float)Position.left, (float)Position.top);
 
         rApplication.m_Window.clear(sf::Color::Black);
 
@@ -41,7 +45,7 @@ namespace Gfx
         TitleText.setFont(Font);
         TitleText.setOutlineColor(OutlineColor);
         TitleText.setOutlineThickness(1.5f);
-        TitleText.setPosition((Size.x - TitleText.getGlobalBounds().width) / 2, 120);
+        TitleText.setPosition((ViewSize.x - TitleText.getGlobalBounds().width) / 2, 120);
 
         sf::Text StartText;
 
@@ -51,7 +55,7 @@ namespace Gfx
         StartText.setFont(Font);
         StartText.setOutlineColor(OutlineColor);
         StartText.setOutlineThickness(1.5f);
-        StartText.setPosition((Size.x - StartText.getGlobalBounds().width) / 2, 250);
+        StartText.setPosition((ViewSize.x - StartText.getGlobalBounds().width) / 2, 250);
 
         sf::Text ExitText;
 
@@ -61,7 +65,7 @@ namespace Gfx
         ExitText.setFont(Font);
         ExitText.setOutlineColor(OutlineColor);
         ExitText.setOutlineThickness(1.5f);
-        ExitText.setPosition((Size.x - ExitText.getGlobalBounds().width) / 2, 300);
+        ExitText.setPosition((ViewSize.x - ExitText.getGlobalBounds().width) / 2, 300);
 
         sf::Text WASDText;
 
@@ -71,7 +75,7 @@ namespace Gfx
         WASDText.setFont(Font);
         WASDText.setOutlineColor(OutlineColor);
         WASDText.setOutlineThickness(1.5f);
-        WASDText.setPosition((Size.x - WASDText.getGlobalBounds().width) / 2, 450);
+        WASDText.setPosition((ViewSize.x - WASDText.getGlobalBounds().width) / 2, 450);
 
         sf::Text ArrowText;
 
@@ -81,7 +85,7 @@ namespace Gfx
         ArrowText.setFont(Font);
         ArrowText.setOutlineColor(OutlineColor);
         ArrowText.setOutlineThickness(1.5f);
-        ArrowText.setPosition((Size.x - ArrowText.getGlobalBounds().width) / 2, 500);
+        ArrowText.setPosition((ViewSize.x - ArrowText.getGlobalBounds().width) / 2, 500);
 
         rApplication.m_Window.clear(sf::Color::Black);
 
