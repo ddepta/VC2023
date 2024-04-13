@@ -31,7 +31,7 @@ namespace Gfx
         sf::IntRect Rectangle(0, 0, 2624, 2624);
 
         BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
-        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top - 600.0f + Size.y);
+        BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top);
 
         rApplication.m_Window.draw(BackgroundSprite);
 
