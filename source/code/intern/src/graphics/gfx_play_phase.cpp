@@ -25,7 +25,11 @@ namespace Gfx
         sf::Vector2f ViewSize = rApplication.m_Window.getView().getSize();
         sf::Vector2u WindowSize = rApplication.m_Window.getSize();
 
+        // Rescale View to window size
+        // Zoom view, so the view size stays the same
         View.setSize(WindowSize.x, WindowSize.y);
+        float ScaleFactor = std::min((float) 1600 / WindowSize.x, (float) 900 / WindowSize.y);
+        View.zoom(ScaleFactor);
 
         sf::Texture BackgroundTexture;
         BackgroundTexture.loadFromFile("..\\resources\\images\\gras.png");
