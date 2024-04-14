@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\graphics\gfx_gif_animation.cpp" />
     <ClCompile Include="..\..\src\graphics\gfx_load_phase.cpp" />
     <ClCompile Include="..\..\src\graphics\gfx_mainmenu_phase.cpp" />
     <ClCompile Include="..\..\src\graphics\gfx_play_phase.cpp" />
@@ -27,6 +28,7 @@
     <ClCompile Include="..\..\src\graphics\gfx_unload_phase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\graphics\gfx_gif_animation.h" />
     <ClInclude Include="..\..\src\graphics\gfx_load_phase.h" />
     <ClInclude Include="..\..\src\graphics\gfx_mainmenu_phase.h" />
     <ClInclude Include="..\..\src\graphics\gfx_play_phase.h" />

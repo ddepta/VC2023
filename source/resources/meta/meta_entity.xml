@@ -6,7 +6,7 @@
       <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
     </data>
     <graphics>
-      <texture value="player.png"/>
+      <texture value="player.gif"/>
     </graphics>
   </meta-entity>
   <meta-entity name="rock">

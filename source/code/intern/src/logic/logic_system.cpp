@@ -97,6 +97,8 @@ namespace Logic
             rPlayerSystem.SetPlayerDirection(Data::CPlayerSystem::Right);
         }
 
+        rPlayerSystem.SetPlayerAnimationState(true);
+
         if (!WallCollision)
         {
             pPlayerEntity->m_Position = 

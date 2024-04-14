@@ -113,5 +113,8 @@
     <ClInclude Include="..\..\src\core\core_splitstrings.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\core\stb_image.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

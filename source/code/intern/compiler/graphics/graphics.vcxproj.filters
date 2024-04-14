@@ -32,6 +32,9 @@
     <ClCompile Include="..\..\src\graphics\gfx_unload_phase.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\graphics\gfx_gif_animation.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\graphics\gfx_load_phase.h">
@@ -50,6 +53,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\graphics\gfx_unload_phase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\gfx_gif_animation.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

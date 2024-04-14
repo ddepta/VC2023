@@ -1,4 +1,5 @@
 #include "gfx_play_phase.h"
+#include "gfx_gif_animation.h"
 #include "game/game_application.h"
 #include <SFML/Graphics/CircleShape.hpp>
 #include "data/data_meta_entity_system.h"
@@ -29,7 +30,7 @@ namespace Gfx
         // Zoom view, so the view size stays the same
         View.setSize(WindowSize.x, WindowSize.y);
         float ScaleFactor = std::min((float) 1600 / WindowSize.x, (float) 900 / WindowSize.y);
-        View.zoom(ScaleFactor);
+        View.zoom(ScaleFactor * 0.5);
 
         sf::Texture BackgroundTexture;
         BackgroundTexture.loadFromFile("..\\resources\\images\\gras.png");
@@ -46,11 +47,21 @@ namespace Gfx
 
         Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
 
+        sf::Sprite PlayerGifSprite;
+
+        bool AnimatePlayer = rPlayerSystem.GetPlayerAnimationState();
+
+        if (AnimatePlayer)
+        {
+            rPlayerSystem.SetPlayerAnimationState(false);
+        }
+
+        m_PlayerGif.update(PlayerGifSprite, AnimatePlayer);
+
         for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
         {
             if (pEntity != nullptr)
             {
-
                 sf::Texture* pTexture = static_cast<sf::Texture*>(pEntity->m_pMetaEntity->m_Facets[Data::CMetaEntity::SFacetType::GraphicsFacet]);
                 assert(pTexture != nullptr);
 
@@ -59,6 +70,8 @@ namespace Gfx
 
                 if (pEntity->m_pMetaEntity->m_Name == "player")
                 {
+                    Sprite = PlayerGifSprite;
+                    Sprite.setPosition(pEntity->m_Position[0], pEntity->m_Position[1]);
                     float X = pEntity->m_Position[0];
                     float Y = pEntity->m_Position[1];
 

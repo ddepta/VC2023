@@ -17,6 +17,16 @@ namespace Data
         return m_PlayerDirection;
     }
 
+    bool CPlayerSystem::GetPlayerAnimationState()
+    {
+        return m_AnimatePlayer;
+    }
+
+    void CPlayerSystem::SetPlayerAnimationState(bool _AnimatePlayer)
+    {
+        m_AnimatePlayer = _AnimatePlayer;
+    }
+
     void CPlayerSystem::SetPlayerDirection(EDirection _Direction)
     {
         this->m_PlayerDirection = _Direction;
