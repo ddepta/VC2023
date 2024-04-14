@@ -3,6 +3,7 @@
 #include "gui/gui_mainmenu_phase.h"
 #include "graphics/gfx_mainmenu_phase.h"
 #include "data/data_event_system.h"
+#include <iostream>
 
 namespace Game
 {
@@ -12,6 +13,7 @@ namespace Game
 
         Data::CEventSystem::GetInstance().Register(Data::SEventType::EnterPressed, &CMainMenuPhase::OnStart);
         Data::CEventSystem::GetInstance().Register(Data::SEventType::EscapePressed, &CMainMenuPhase::OnExit);
+        Data::CEventSystem::GetInstance().Register(Data::SEventType::DispatchInput, &CMainMenuPhase::DispatchInput);
 
         Data::CMainMenuPhase::GetInstance().OnEnter();
         Gui ::CMainMenuPhase::GetInstance().OnEnter();
@@ -49,5 +51,26 @@ namespace Game
     void CMainMenuPhase::OnExit(Data::CEvent& _rEvent)
     {
         CMainMenuPhase::GetInstance().m_NextRunPhase = CPhase::Shutdown;
+    }
+
+    void CMainMenuPhase::DispatchInput(Data::CEvent& _rEvent)
+    {
+        if (_rEvent.GetData() == Data::SEventType::UpPressed)
+        {
+            Gui::CMainMenuPhase::GetInstance().SetMenuState(Gui::CMainMenuPhase::Start);
+        }
+
+        if (_rEvent.GetData() == Data::SEventType::DownPressed)
+        {
+            Gui::CMainMenuPhase::GetInstance().SetMenuState(Gui::CMainMenuPhase::Exit);
+        }
+    }
+
+    void CMainMenuPhase::OnUp(Data::CEvent& _rEvent)
+    {
+    }
+
+    void CMainMenuPhase::OnDown(Data::CEvent& _rEvent)
+    {
     }
 }

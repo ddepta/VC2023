@@ -1,5 +1,6 @@
 ﻿#include "gfx_mainmenu_phase.h"
 #include "game/game_application.h"
+#include "gui/gui_mainmenu_phase.h"
 #include <SFML/Graphics/Text.hpp>
 #include <iostream>
 
@@ -11,90 +12,94 @@ namespace Gfx
     void CMainMenuPhase::OnRun()
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
+
+        rApplication.m_Window.clear(sf::Color::Black);
+
+        sf::View View = rApplication.m_Window.getView();
         sf::Vector2f ViewSize = rApplication.m_Window.getView().getSize();
         sf::Vector2u WindowSize = rApplication.m_Window.getSize();
+        sf::Font Font;
+        Font.loadFromFile("..\\resources\\font\\Minecraft.otf");
 
-        sf::Texture BackgroundTexture;
+        sf::Color TextColor = sf::Color(255, 255, 255);
 
-        BackgroundTexture.loadFromFile("..\\resources\\images\\pattern.png");
-        BackgroundTexture.setRepeated(true);
-
-        std::cout << rApplication.m_Window.getSize().x << "\n";
-
-        sf::IntRect Position(0, 0, WindowSize.x, WindowSize.y);
+        // Scale viewport when resizing
         sf::FloatRect ViewPort(0.0f, 0.0f, WindowSize.x, WindowSize.y);
 
         rApplication.m_Window.setView(sf::View(ViewPort));
 
-        sf::Sprite BackgroundSprite = sf::Sprite(BackgroundTexture, Position);
-        BackgroundSprite.setPosition((float)Position.left, (float)Position.top);
+        // Calculate the proportional scaling for textures
+        float MaxScaleFactor = std::max((float)WindowSize.x / 1600, (float)WindowSize.y / 900);
+        float MinScaleFactor = std::min((float)WindowSize.x / 1600, (float)WindowSize.y / 900);
 
-        rApplication.m_Window.clear(sf::Color::Black);
+        sf::Texture BackgroundTexture;
 
-        sf::Font Font;
-        Font.loadFromFile("..\\resources\\font\\Berlin Sans FB Regular.ttf");
+        BackgroundTexture.loadFromFile("..\\resources\\images\\background_new.png");
 
-        sf::Color TextColor = sf::Color(191, 255, 191);
-        sf::Color OutlineColor = sf::Color(10, 69, 0);
+        sf::Sprite BackgroundSprite(BackgroundTexture);
+        BackgroundSprite.setPosition(0, 0);
+        BackgroundSprite.setScale(MaxScaleFactor, MaxScaleFactor);
 
-        sf::Text TitleText;
+        sf::Texture TitleTexture;
 
-        TitleText.setString("Ostereier-Suche");
-        TitleText.setCharacterSize(60);
-        TitleText.setFillColor(TextColor);
-        TitleText.setFont(Font);
-        TitleText.setOutlineColor(OutlineColor);
-        TitleText.setOutlineThickness(1.5f);
-        TitleText.setPosition((ViewSize.x - TitleText.getGlobalBounds().width) / 2, 120);
+        TitleTexture.loadFromFile("..\\resources\\images\\title.png");
 
-        sf::Text StartText;
+        sf::Sprite TitleSprite(TitleTexture);
+        TitleSprite.setScale(MinScaleFactor, MinScaleFactor);
+        TitleSprite.setPosition((ViewSize.x - TitleSprite.getGlobalBounds().width) / 2, WindowSize.y / 10);
 
-        StartText.setString("Start (ENTER)");
-        StartText.setCharacterSize(40);
-        StartText.setFillColor(TextColor);
-        StartText.setFont(Font);
-        StartText.setOutlineColor(OutlineColor);
-        StartText.setOutlineThickness(1.5f);
-        StartText.setPosition((ViewSize.x - StartText.getGlobalBounds().width) / 2, 250);
+        sf::Texture MenuTexture;
 
-        sf::Text ExitText;
+        if (Gui::CMainMenuPhase::GetInstance().GetMenuState() == Gui::CMainMenuPhase::Start)
+        {
+            MenuTexture.loadFromFile("..\\resources\\images\\menu_start.png");
+        }
+        else
+        {
+            MenuTexture.loadFromFile("..\\resources\\images\\menu_exit.png");
+        }
 
-        ExitText.setString("Beenden (ESC)");
-        ExitText.setCharacterSize(40);
-        ExitText.setFillColor(TextColor);
-        ExitText.setFont(Font);
-        ExitText.setOutlineColor(OutlineColor);
-        ExitText.setOutlineThickness(1.5f);
-        ExitText.setPosition((ViewSize.x - ExitText.getGlobalBounds().width) / 2, 300);
+        sf::Sprite MenuSprite(MenuTexture);
+        //std::cout << "menusprite: " << MenuSprite.getGlobalBounds().width;
+        MenuSprite.setScale(MinScaleFactor, MinScaleFactor);
+        //std::cout << "menusprite: " << MenuSprite.getGlobalBounds().width << "\n";
+        MenuSprite.setPosition((ViewSize.x - (MenuSprite.getGlobalBounds().width - (115 * MinScaleFactor))) / 2, (ViewSize.y - (MenuSprite.getGlobalBounds().height - (28 * MinScaleFactor))) / 2);
 
-        sf::Text WASDText;
+        sf::Texture ControlsTexture;
 
-        WASDText.setString("W + A + S + D");
-        WASDText.setCharacterSize(30);
-        WASDText.setFillColor(TextColor);
-        WASDText.setFont(Font);
-        WASDText.setOutlineColor(OutlineColor);
-        WASDText.setOutlineThickness(1.5f);
-        WASDText.setPosition((ViewSize.x - WASDText.getGlobalBounds().width) / 2, 450);
+        ControlsTexture.loadFromFile("..\\resources\\images\\controls.png");
 
-        sf::Text ArrowText;
+        sf::Sprite ControlsSprite(ControlsTexture);
+        //std::cout << "menusprite: " << ControlsSprite.getGlobalBounds().width;
+        ControlsSprite.setScale(MinScaleFactor, MinScaleFactor);
+        //std::cout << "ControlsSprite: " << ControlsSprite.getGlobalBounds().width << "\n";
+        ControlsSprite.setPosition((ViewSize.x - ControlsSprite.getGlobalBounds().width) / 2, (ViewSize.y - ControlsSprite.getGlobalBounds().height) / 1.1);
 
-        ArrowText.setString("Pfeiltasten");
-        ArrowText.setCharacterSize(30);
-        ArrowText.setFillColor(TextColor);
-        ArrowText.setFont(Font);
-        ArrowText.setOutlineColor(OutlineColor);
-        ArrowText.setOutlineThickness(1.5f);
-        ArrowText.setPosition((ViewSize.x - ArrowText.getGlobalBounds().width) / 2, 500);
+
+        sf::Text VersionText;
+
+        VersionText.setString("Ostereiersuche 1.21");
+        VersionText.setCharacterSize(30);
+        VersionText.setFillColor(TextColor);
+        VersionText.setFont(Font);
+        VersionText.setPosition(10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
+
+        sf::Text NameText;
+
+        NameText.setString("Daniel Depta - FH Erfurt");
+        NameText.setCharacterSize(30);
+        NameText.setFillColor(TextColor);
+        NameText.setFont(Font);
+        NameText.setPosition(ViewSize.x - NameText.getGlobalBounds().width - 10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
 
         rApplication.m_Window.clear(sf::Color::Black);
 
         rApplication.m_Window.draw(BackgroundSprite);
-        rApplication.m_Window.draw(TitleText);
-        rApplication.m_Window.draw(StartText);
-        rApplication.m_Window.draw(ExitText);
-        rApplication.m_Window.draw(WASDText);
-        rApplication.m_Window.draw(ArrowText);
+        rApplication.m_Window.draw(TitleSprite);
+        rApplication.m_Window.draw(MenuSprite);
+        rApplication.m_Window.draw(ControlsSprite);
+        rApplication.m_Window.draw(VersionText);
+        rApplication.m_Window.draw(NameText);
 
         rApplication.m_Window.display();
     }

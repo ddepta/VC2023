@@ -19,6 +19,9 @@ namespace Game
     public:
         static void OnStart(Data::CEvent& _rEvent);
         static void OnExit(Data::CEvent& _rEvent);
+        static void DispatchInput(Data::CEvent& _rEvent);
+        static void OnDown(Data::CEvent& _rEvent);
+        static void OnUp(Data::CEvent& _rEvent);
 
     private:
         CMainMenuPhase() : m_NextRunPhase(CPhase::MainMenu) {};
