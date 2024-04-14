@@ -7,7 +7,9 @@
 namespace Gfx
 {
     void CMainMenuPhase::OnEnter()
-    {}
+    {
+        m_Splash.GenerateRandomSplashText();
+    }
 
     void CMainMenuPhase::OnRun()
     {
@@ -18,10 +20,12 @@ namespace Gfx
         sf::View View = rApplication.m_Window.getView();
         sf::Vector2f ViewSize = rApplication.m_Window.getView().getSize();
         sf::Vector2u WindowSize = rApplication.m_Window.getSize();
+
         sf::Font Font;
         Font.loadFromFile("..\\resources\\font\\Minecraft.otf");
 
         sf::Color TextColor = sf::Color(255, 255, 255);
+        sf::Color SplashColor = sf::Color(255, 255, 0);
 
         // Scale viewport when resizing
         sf::FloatRect ViewPort(0.0f, 0.0f, WindowSize.x, WindowSize.y);
@@ -44,9 +48,14 @@ namespace Gfx
 
         TitleTexture.loadFromFile("..\\resources\\images\\title.png");
 
+
         sf::Sprite TitleSprite(TitleTexture);
         TitleSprite.setScale(MinScaleFactor, MinScaleFactor);
-        TitleSprite.setPosition((ViewSize.x - TitleSprite.getGlobalBounds().width) / 2, WindowSize.y / 10);
+
+        float TitlePositionX = (ViewSize.x - TitleSprite.getGlobalBounds().width) / 2;
+        float TitlePositionY = WindowSize.y / 10;
+
+        TitleSprite.setPosition(TitlePositionX, TitlePositionY);
 
         sf::Texture MenuTexture;
 
@@ -75,7 +84,6 @@ namespace Gfx
         //std::cout << "ControlsSprite: " << ControlsSprite.getGlobalBounds().width << "\n";
         ControlsSprite.setPosition((ViewSize.x - ControlsSprite.getGlobalBounds().width) / 2, (ViewSize.y - ControlsSprite.getGlobalBounds().height) / 1.1);
 
-
         sf::Text VersionText;
 
         VersionText.setString("Ostereiersuche 1.21");
@@ -83,6 +91,37 @@ namespace Gfx
         VersionText.setFillColor(TextColor);
         VersionText.setFont(Font);
         VersionText.setPosition(10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
+
+        sf::Text SplashText;
+
+        SplashText.setString(m_Splash.GetCurrentSplashText());
+        SplashText.setCharacterSize(50);
+        SplashText.setFillColor(SplashColor);
+        SplashText.setFont(Font);
+        SplashText.setOutlineColor(sf::Color::Black);
+        SplashText.setOutlineThickness(2.0f);
+        SplashText.setRotation(-20.0f);
+
+        if (m_Splash.m_Growing)
+        {
+            m_Splash.m_TextScale += 0.01f;
+        }
+        else
+        {
+            m_Splash.m_TextScale -= 0.01;
+        }
+
+        if (m_Splash.m_TextScale < 0.95f)
+        {
+            m_Splash.m_Growing = true;
+        }
+        if (m_Splash.m_TextScale >= 1.0f)
+        {
+            m_Splash.m_Growing = false;
+        }
+
+        SplashText.setScale(MinScaleFactor * m_Splash.m_TextScale, MinScaleFactor * m_Splash.m_TextScale);
+        SplashText.setPosition(TitlePositionX + (800 * MinScaleFactor) - (SplashText.getGlobalBounds().width / 2), TitlePositionY + (150 * MinScaleFactor));
 
         sf::Text NameText;
 
@@ -100,10 +139,23 @@ namespace Gfx
         rApplication.m_Window.draw(ControlsSprite);
         rApplication.m_Window.draw(VersionText);
         rApplication.m_Window.draw(NameText);
+        rApplication.m_Window.draw(SplashText);
 
         rApplication.m_Window.display();
     }
 
     void CMainMenuPhase::OnLeave()
     {}
+
+    void CMainMenuPhase::SSplash::GenerateRandomSplashText()
+    {
+        int RandomPosition = std::rand() % m_SplashTexts.size();
+        
+        m_CurrentSplashText = m_SplashTexts[RandomPosition];
+    }
+
+    std::string CMainMenuPhase::SSplash::GetCurrentSplashText()
+    {
+        return m_CurrentSplashText;
+    }
 }
