@@ -104,7 +104,7 @@ namespace Gfx
         sf::Text ScoreLabelText;
 
         ScoreLabelText.setString("Ostereier:   /" + MaxScore);
-        ScoreLabelText.setCharacterSize(30);
+        ScoreLabelText.setCharacterSize(20);
         ScoreLabelText.setFillColor(sf::Color(191, 255, 191));
         ScoreLabelText.setFont(Font);
         ScoreLabelText.setOutlineColor(OutlineColor);
@@ -113,7 +113,7 @@ namespace Gfx
         sf::Text ScoreText;
 
         ScoreText.setString(Score);
-        ScoreText.setCharacterSize(30);
+        ScoreText.setCharacterSize(20);
         ScoreText.setFillColor(sf::Color(42, 255, 42));
         ScoreText.setFont(Font);
         ScoreText.setOutlineColor(OutlineColor);
@@ -124,7 +124,7 @@ namespace Gfx
         auto YPosition = View.getCenter().y - ViewSize.y / 2 + 3.0f;
 
         ScoreLabelText.setPosition(XPosition, YPosition);
-        ScoreText.setPosition(XPosition + 145.0f - ScoreText.getGlobalBounds().width, YPosition);
+        ScoreText.setPosition(XPosition + 105.0f, YPosition);
 
         rApplication.m_Window.draw(ScoreLabelText);
         rApplication.m_Window.draw(ScoreText);
