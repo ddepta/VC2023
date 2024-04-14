@@ -11,7 +11,7 @@ namespace Game
     {
         m_NextRunPhase = EPhase::MainMenu;
 
-        Data::CEventSystem::GetInstance().Register(Data::SEventType::EnterPressed, &CMainMenuPhase::OnStart);
+        Data::CEventSystem::GetInstance().Register(Data::SEventType::EnterPressed, &CMainMenuPhase::OnEnter);
         Data::CEventSystem::GetInstance().Register(Data::SEventType::EscapePressed, &CMainMenuPhase::OnExit);
         Data::CEventSystem::GetInstance().Register(Data::SEventType::DispatchInput, &CMainMenuPhase::DispatchInput);
 
@@ -33,7 +33,7 @@ namespace Game
 
     int CMainMenuPhase::InternOnLeave()
     {
-        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EnterPressed, &CMainMenuPhase::OnStart);
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EnterPressed, &CMainMenuPhase::OnEnter);
         Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EscapePressed, &CMainMenuPhase::OnExit);
 
         Data::CMainMenuPhase::GetInstance().OnLeave();
@@ -43,9 +43,16 @@ namespace Game
         return 0;
     }
 
-    void CMainMenuPhase::OnStart(Data::CEvent& _rEvent)
+    void CMainMenuPhase::OnEnter(Data::CEvent& _rEvent)
     {
-        CMainMenuPhase::GetInstance().m_NextRunPhase = CPhase::LoadMap;
+        if (Gui::CMainMenuPhase::GetInstance().GetMenuState() == Gui::CMainMenuPhase::Start)
+        {
+            CMainMenuPhase::GetInstance().m_NextRunPhase = CPhase::LoadMap;
+        }
+        else
+        {
+            CMainMenuPhase::GetInstance().m_NextRunPhase = CPhase::Shutdown;
+        }
     }
 
     void CMainMenuPhase::OnExit(Data::CEvent& _rEvent)
@@ -64,13 +71,5 @@ namespace Game
         {
             Gui::CMainMenuPhase::GetInstance().SetMenuState(Gui::CMainMenuPhase::Exit);
         }
-    }
-
-    void CMainMenuPhase::OnUp(Data::CEvent& _rEvent)
-    {
-    }
-
-    void CMainMenuPhase::OnDown(Data::CEvent& _rEvent)
-    {
     }
 }
