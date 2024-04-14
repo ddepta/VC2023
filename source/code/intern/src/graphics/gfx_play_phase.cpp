@@ -30,7 +30,7 @@ namespace Gfx
         // Zoom view, so the view size stays the same
         View.setSize(WindowSize.x, WindowSize.y);
         float ScaleFactor = std::min((float) 1600 / WindowSize.x, (float) 900 / WindowSize.y);
-        View.zoom(ScaleFactor * 0.5);
+        View.zoom(ScaleFactor * 0.55);
 
         sf::Texture BackgroundTexture;
         BackgroundTexture.loadFromFile("..\\resources\\images\\gras.png");
