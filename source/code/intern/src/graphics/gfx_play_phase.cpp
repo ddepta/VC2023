@@ -130,7 +130,7 @@ namespace Gfx
         auto YPosition = View.getCenter().y - ViewSize.y / 2 + 3.0f;
 
         ScoreLabelText.setPosition(XPosition, YPosition);
-        ScoreText.setPosition(XPosition + 105.0f, YPosition);
+        ScoreText.setPosition(XPosition + 107.0f, YPosition);
 
         rApplication.m_Window.draw(ScoreLabelText);
         rApplication.m_Window.draw(ScoreText);
