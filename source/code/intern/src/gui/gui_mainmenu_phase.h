@@ -15,12 +15,25 @@ namespace Gui
         CMainMenuPhase& operator = (const CMainMenuPhase&) = delete;
 
     public:
+        enum EMenuState
+        {
+            Start,
+            Exit
+        };
+
+    public:
         void OnEnter();
         void OnRun();
         void OnLeave();
 
+        EMenuState GetMenuState();
+        void SetMenuState(EMenuState _MenuState);
+
     private:
-        CMainMenuPhase()
+        CMainMenuPhase() : m_MenuState(Start)
         {};
+
+    private:
+        EMenuState m_MenuState;
     };
 }

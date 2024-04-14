@@ -1,5 +1,7 @@
 #pragma once
 
+#include "gfx_gif_animation.h"
+
 namespace Gfx
 {
     class CPlayPhase
@@ -19,7 +21,9 @@ namespace Gfx
             void OnRun();
             void OnLeave();
 
+            AnimatedGIF m_PlayerGif;
+
         private:
-            CPlayPhase() {};
+            CPlayPhase() : m_PlayerGif("..\\resources\\textures\\player.gif"){};
         };
 }

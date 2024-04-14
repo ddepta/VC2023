@@ -27,6 +27,8 @@ namespace Data
         CEntity* GetPlayer();
         void SetPlayer(CEntity* _pPlayer);
         EDirection GetPlayerDirection();
+        bool GetPlayerAnimationState();
+        void SetPlayerAnimationState(bool _AnimatePlayer);
         void SetPlayerDirection(EDirection _Direction);
 
     private:
@@ -36,5 +38,6 @@ namespace Data
     private:
         CEntity* m_pPlayer;
         EDirection m_PlayerDirection;
+        bool m_AnimatePlayer = false;
     };
 }
