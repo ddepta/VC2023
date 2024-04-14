@@ -21,7 +21,7 @@ private:
     sf::Time totalDelay;
     std::vector<std::tuple<int, sf::Texture>> frames;
     std::vector<std::tuple<int, sf::Texture>>::iterator frameIter;
-    bool m_Animate = true;
+    bool m_Animate = false;
 };
 
 #endif

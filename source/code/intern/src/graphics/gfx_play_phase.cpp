@@ -51,12 +51,18 @@ namespace Gfx
 
         bool AnimatePlayer = rPlayerSystem.GetPlayerAnimationState();
 
+        //if (AnimatePlayer)
+        //{
+        //    std::cout << "animate sent --- ";
+        //}
+        m_PlayerGif.update(PlayerGifSprite, AnimatePlayer);
+
+
+        //std::cout << "\n";
         if (AnimatePlayer)
         {
             rPlayerSystem.SetPlayerAnimationState(false);
         }
-
-        m_PlayerGif.update(PlayerGifSprite, AnimatePlayer);
 
         for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
         {
@@ -94,7 +100,7 @@ namespace Gfx
         }
 
         sf::Font Font;
-        Font.loadFromFile("..\\resources\\font\\Berlin Sans FB Regular.ttf");
+        Font.loadFromFile("..\\resources\\font\\Minecraft.otf");
 
         sf::Color OutlineColor = sf::Color(10, 69, 0);
 

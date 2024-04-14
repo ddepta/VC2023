@@ -63,6 +63,7 @@ AnimatedGIF::update(sf::Sprite& sprite, bool _Animate)
         if (frameIter == frames.end())
         {
             m_Animate = false;
+            frameIter = frames.begin();
         }
         totalDelay += delay;
         delay = sf::milliseconds(std::get<0>(*frameIter));

@@ -35,6 +35,7 @@ namespace Game
     {
         Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EnterPressed, &CMainMenuPhase::OnEnter);
         Data::CEventSystem::GetInstance().Unregister(Data::SEventType::EscapePressed, &CMainMenuPhase::OnExit);
+        Data::CEventSystem::GetInstance().Unregister(Data::SEventType::DispatchInput, &CMainMenuPhase::DispatchInput);
 
         Data::CMainMenuPhase::GetInstance().OnLeave();
         Gui ::CMainMenuPhase::GetInstance().OnLeave();
