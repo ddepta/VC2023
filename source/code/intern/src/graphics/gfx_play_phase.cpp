@@ -19,6 +19,8 @@ namespace Gfx
     void CPlayPhase::OnRun() 
     {
         Game::CApplication& rApplication = Game::CApplication::GetInstance();
+        Data::CEntitySystem& rEntitySystem = Data::CEntitySystem::GetInstance();
+
         rApplication.m_Window.clear(sf::Color::Black);
 
         sf::View View = rApplication.m_Window.getView();
@@ -48,7 +50,7 @@ namespace Gfx
 
         sf::Sprite BackgroundSprite;
 
-        sf::IntRect Rectangle(0, 0, 2624, 2624);
+        sf::IntRect Rectangle(0, 0, rEntitySystem.m_LevelSize[0], rEntitySystem.m_LevelSize[1]);
 
         BackgroundSprite = sf::Sprite(BackgroundTexture, Rectangle);
         BackgroundSprite.setPosition((float)Rectangle.left, (float)Rectangle.top);
@@ -73,7 +75,7 @@ namespace Gfx
         // -----------------------------------------------------------------------------
         // draw all map contents
         // -----------------------------------------------------------------------------
-        for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
+        for (Data::CEntity* pEntity : rEntitySystem.GetAllEntities())
         {
             if (pEntity != nullptr)
             {
@@ -92,11 +94,11 @@ namespace Gfx
 
                     if (rPlayerSystem.GetPlayerDirection() == Data::CPlayerSystem::Right)
                     {
-                        Sprite.setTextureRect(sf::IntRect(0, 0, 64, 64));
+                        Sprite.setTextureRect(sf::IntRect(0, 0, pEntity->m_Size[0], pEntity->m_Size[1]));
                     }
                     else
                     {
-                        Sprite.setTextureRect(sf::IntRect(64, 0, -64, 64));
+                        Sprite.setTextureRect(sf::IntRect(pEntity->m_Size[0], 0, -pEntity->m_Size[0], pEntity->m_Size[1]));
                     }
                 }
                 else

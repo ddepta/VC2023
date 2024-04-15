@@ -21,6 +21,8 @@ namespace Data
 
         int MaxScore = 0;
 
+        Core::CVector2<float> LevelSize;
+
         // -----------------------------------------------------------------------------
         // Iterate over each entity
         // -----------------------------------------------------------------------------
@@ -88,8 +90,13 @@ namespace Data
 
             rEntity.m_pMetaEntity = &rMetaEntity;
 
+            LevelSize[0] = rEntity.m_Position[0] + rEntity.m_Size[0];
+            LevelSize[1] = rEntity.m_Position[1] + rEntity.m_Size[1];
+
             EntityCount++;
         }
+
+        m_LevelSize = LevelSize;
 
         Data::CScoreSystem& rScoreSystem = Data::CScoreSystem::GetInstance();
         rScoreSystem.SetMaxScore(MaxScore);

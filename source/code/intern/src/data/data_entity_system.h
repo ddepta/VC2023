@@ -25,6 +25,7 @@ namespace Data
         CEntity& CreateEntity(std::string _Name);
         void DestroyEntity(CEntity& _rEntity);
         std::vector<Data::CEntity*> GetAllEntities();
+        Core::CVector2<float> m_LevelSize;
 
     private:
         CEntitySystem() {};
