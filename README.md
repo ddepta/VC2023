@@ -1,11 +1,12 @@
 # VC2023
 
-C++-Spiel mit SFML für das Modul Visual Computing an der FH Erfurt
+C++-Spiel mit SFML für das Modul Visual Computing an der FH Erfurt.
 
 ## Beschreibung
 
 Im Spiel steuert man eine animierte Spielfigur und man muss Ostereier einsammeln.
 Über die Zielflagge gelangt man wieder zurück ins Hauptmenü.
+Es gibt einige Eastereggs!
 
 ### Steuerung
 
