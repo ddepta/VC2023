@@ -46,17 +46,6 @@ namespace Data
 
             CEntity& rEntity = CreateEntity(Name);
 
-            if (rMetaEntity.m_Name == "egg")
-            {
-                MaxScore++;
-            }
-
-            if (rMetaEntity.m_Name == "player")
-            {
-                Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
-                rPlayerSystem.SetPlayer(&rEntity);
-            }
-
             if (Type >= SEntityCategory::NumberOfMembers)
             {
                 rEntity.m_Category = SEntityCategory::Undefined;
@@ -64,6 +53,20 @@ namespace Data
             else
             {
                 rEntity.m_Category = SEntityCategory::Enum(Type);
+            }
+
+            // -----------------------------------------------------------------------------
+            // Count eggs to define the max score
+            // -----------------------------------------------------------------------------
+            if (rEntity.m_Category == SEntityCategory::Egg)
+            {
+                MaxScore++;
+            }
+
+            if (rEntity.m_Category == SEntityCategory::Character)
+            {
+                Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
+                rPlayerSystem.SetPlayer(&rEntity);
             }
 
             rEntity.m_Size = Core::Float3(

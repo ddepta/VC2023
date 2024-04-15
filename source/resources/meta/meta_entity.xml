@@ -90,13 +90,67 @@
       <texture value="easteregg.png"/>
     </graphics>
   </meta-entity>
-  <meta-entity name="egg">
+  <meta-entity name="egg1">
     <data>
       <size value="0.0"/>
       <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
     </data>
     <graphics>
-      <texture value="egg.png"/>
+      <texture value="egg1.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg2">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg2.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg3">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg3.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg4">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg4.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg5">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg5.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg6">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg6.png"/>
+    </graphics>
+  </meta-entity>
+  <meta-entity name="egg7">
+    <data>
+      <size value="0.0"/>
+      <aabb minCorner="0.0;0.0;0.0" maxCorner="64.0;64.0;0.0"></aabb>
+    </data>
+    <graphics>
+      <texture value="egg7.png"/>
     </graphics>
   </meta-entity>
   <meta-entity name="finish">

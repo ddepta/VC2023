@@ -294,7 +294,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_1_1" meta-entity="egg">
+  <entity name="egg_1_1" meta-entity="egg1">
     <data>
       <type>2</type>
       <position>64.0;64.0;0.0</position>
@@ -868,7 +868,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_20_8" meta-entity="egg">
+  <entity name="egg_20_8" meta-entity="egg2">
     <data>
       <type>2</type>
       <position>1280.0;512.0;0.0</position>
@@ -1785,7 +1785,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_11_17" meta-entity="egg">
+  <entity name="egg_11_17" meta-entity="egg3">
     <data>
       <type>2</type>
       <position>704.0;1088.0;0.0</position>
@@ -1855,7 +1855,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_28_17" meta-entity="egg">
+  <entity name="egg_28_17" meta-entity="egg4">
     <data>
       <type>2</type>
       <position>1792.0;1088.0;0.0</position>
@@ -2268,7 +2268,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_21_20" meta-entity="egg">
+  <entity name="egg_21_20" meta-entity="egg5">
     <data>
       <type>2</type>
       <position>1344.0;1280.0;0.0</position>
@@ -3346,7 +3346,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_33_29" meta-entity="egg">
+  <entity name="egg_33_29" meta-entity="egg6">
     <data>
       <type>2</type>
       <position>2112.0;1856.0;0.0</position>
@@ -3682,7 +3682,7 @@
       <size>64.0;64.0;64.0</size>
     </data>
   </entity>
-  <entity name="egg_12_34" meta-entity="egg">
+  <entity name="egg_12_34" meta-entity="egg7">
     <data>
       <type>2</type>
       <position>768.0;2176.0;0.0</position>
