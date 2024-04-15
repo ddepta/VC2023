@@ -7,9 +7,9 @@ namespace Data
     void CLoadPhase::OnEnter()
     {}
 
-    void CLoadPhase::OnRun(tinyxml2::XMLDocument& _rDocument)
+    void CLoadPhase::OnRun(tinyxml2::XMLDocument& _rLevelXml)
     {
-        CEntitySystem::GetInstance().Initialize(_rDocument);
+        CEntitySystem::GetInstance().Initialize(_rLevelXml);
     }
 
     void CLoadPhase::OnLeave()

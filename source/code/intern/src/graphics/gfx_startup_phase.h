@@ -18,7 +18,7 @@ namespace Gfx
 
     public:
         void OnEnter();
-        void OnRun(tinyxml2::XMLDocument& _rDocument);
+        void OnRun(tinyxml2::XMLDocument& _rMetaEntityXml);
         void OnLeave();
 
     private:

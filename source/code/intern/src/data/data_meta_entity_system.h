@@ -22,8 +22,8 @@ namespace Data
         CMetaEntitySystem& operator = (const CMetaEntitySystem&) = delete;
 
     public:
-        int Initialize(tinyxml2::XMLDocument& _rDocument);
-        CMetaEntity& CreateMetaEntity(std::string name);
+        int Initialize(tinyxml2::XMLDocument& _rMetaEntityXml);
+        CMetaEntity& CreateMetaEntity(std::string _Name);
         CMetaEntity& GetMetaEntityByID(Core::CIDManager::BID _ID);
         Core::CIDManager::BID GetMetaEntityID(std::string _Name);
 

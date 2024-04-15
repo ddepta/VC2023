@@ -5,9 +5,9 @@
 
 namespace Data
 {
-    int CMetaEntitySystem::Initialize(tinyxml2::XMLDocument& _rDocument)
+    int CMetaEntitySystem::Initialize(tinyxml2::XMLDocument& _rMetaEntityXml)
     {
-        tinyxml2::XMLElement* pMetaEntities = _rDocument.FirstChildElement("meta-entities");
+        tinyxml2::XMLElement* pMetaEntities = _rMetaEntityXml.FirstChildElement("meta-entities");
 
         int MetaEntityCount = 0;
 

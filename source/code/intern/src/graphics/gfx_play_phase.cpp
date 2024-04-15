@@ -1,12 +1,12 @@
 #include "gfx_play_phase.h"
 #include "gfx_gif_animation.h"
 #include "game/game_application.h"
-#include <SFML/Graphics/CircleShape.hpp>
 #include "data/data_meta_entity_system.h"
 #include "data/data_entity.h"
 #include "data/data_entity_system.h"
 #include "data/data_score_system.h"
 #include "data/data_player_system.h"
+#include <SFML/Graphics/CircleShape.hpp>
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics/Text.hpp>
@@ -26,12 +26,22 @@ namespace Gfx
         sf::Vector2f ViewSize = rApplication.m_Window.getView().getSize();
         sf::Vector2u WindowSize = rApplication.m_Window.getSize();
 
+        sf::Font Font;
+        Font.loadFromFile("..\\resources\\font\\Minecraft.otf");
+
+        sf::Color OutlineColor = sf::Color(10, 69, 0);
+
+        // -----------------------------------------------------------------------------
         // Rescale View to window size
         // Zoom view, so the view size stays the same
-        View.setSize(WindowSize.x, WindowSize.y);
-        float ScaleFactor = std::min((float) 1600 / WindowSize.x, (float) 900 / WindowSize.y);
-        View.zoom(ScaleFactor * 0.55);
+        // -----------------------------------------------------------------------------
+        View.setSize((float)WindowSize.x, (float)WindowSize.y);
+        float ScaleFactor = std::min(1600.0f / (float)WindowSize.x, 900.0f / (float)WindowSize.y);
+        View.zoom(ScaleFactor * 0.55f);
 
+        // -----------------------------------------------------------------------------
+        // Create Background
+        // -----------------------------------------------------------------------------
         sf::Texture BackgroundTexture;
         BackgroundTexture.loadFromFile("..\\resources\\images\\gras.png");
         BackgroundTexture.setRepeated(true);
@@ -45,34 +55,29 @@ namespace Gfx
 
         rApplication.m_Window.draw(BackgroundSprite);
 
+        // -----------------------------------------------------------------------------
+        // Create animated player
+        // -----------------------------------------------------------------------------
         Data::CPlayerSystem& rPlayerSystem = Data::CPlayerSystem::GetInstance();
 
         sf::Sprite PlayerGifSprite;
 
         bool AnimatePlayer = rPlayerSystem.GetPlayerAnimationState();
+        m_PlayerGif.Update(PlayerGifSprite, AnimatePlayer);
 
-        //if (AnimatePlayer)
-        //{
-        //    std::cout << "animate sent --- ";
-        //}
-        m_PlayerGif.update(PlayerGifSprite, AnimatePlayer);
-
-
-        //std::cout << "\n";
         if (AnimatePlayer)
         {
             rPlayerSystem.SetPlayerAnimationState(false);
         }
 
+        // -----------------------------------------------------------------------------
+        // draw all map contents
+        // -----------------------------------------------------------------------------
         for (Data::CEntity* pEntity : Data::CEntitySystem::GetInstance().GetAllEntities())
         {
             if (pEntity != nullptr)
             {
-                sf::Texture* pTexture = static_cast<sf::Texture*>(pEntity->m_pMetaEntity->m_Facets[Data::CMetaEntity::SFacetType::GraphicsFacet]);
-                assert(pTexture != nullptr);
-
-                sf::Sprite Sprite(*pTexture);
-                Sprite.setPosition(pEntity->m_Position[0], pEntity->m_Position[1]);
+                sf::Sprite Sprite;
 
                 if (pEntity->m_pMetaEntity->m_Name == "player")
                 {
@@ -94,16 +99,22 @@ namespace Gfx
                         Sprite.setTextureRect(sf::IntRect(64, 0, -64, 64));
                     }
                 }
+                else
+                {
+                    sf::Texture* pTexture = static_cast<sf::Texture*>(pEntity->m_pMetaEntity->m_Facets[Data::CMetaEntity::SFacetType::GraphicsFacet]);
+                    assert(pTexture != nullptr);
+
+                    Sprite.setTexture(*pTexture);
+                    Sprite.setPosition(pEntity->m_Position[0], pEntity->m_Position[1]);
+                }
 
                 rApplication.m_Window.draw(Sprite);
             }
         }
 
-        sf::Font Font;
-        Font.loadFromFile("..\\resources\\font\\Minecraft.otf");
-
-        sf::Color OutlineColor = sf::Color(10, 69, 0);
-
+        // -----------------------------------------------------------------------------
+        // Generate score text
+        // -----------------------------------------------------------------------------
         std::string Score = std::to_string(Data::CScoreSystem::GetInstance().GetScore());
         std::string MaxScore = std::to_string(Data::CScoreSystem::GetInstance().GetMaxScore());
 

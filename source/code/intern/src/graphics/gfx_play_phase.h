@@ -21,7 +21,7 @@ namespace Gfx
             void OnRun();
             void OnLeave();
 
-            AnimatedGIF m_PlayerGif;
+            CGifAnimation m_PlayerGif;
 
         private:
             CPlayPhase() : m_PlayerGif("..\\resources\\textures\\player.gif"){};

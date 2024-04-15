@@ -1,79 +1,83 @@
 #include "gfx_gif_animation.h"
 
-//#define STB_IMAGE_STATIC
 #define STB_IMAGE_IMPLEMENTATION
 #define STBI_ONLY_GIF
-#include "core/stb_image.h"
+#include <stb_image.h>
 #include <iostream>
 
-AnimatedGIF::AnimatedGIF(const char* filename)
+namespace Gfx
 {
-    FILE* f = stbi__fopen(filename, "rb");
-    stbi__context s;
-    stbi__start_file(&s, f);
-
-    int* delays = 0;
-    int z = 0, comp = 0;
-
-    void* pixels = stbi__load_gif_main(&s, &delays, &size.x, &size.y, &z, &comp, STBI_rgb_alpha);
-
-    sf::Image image;
-    int step = size.x * size.y * 4;
-
-    for (int i = 0; i < z; i++)
+    CGifAnimation::CGifAnimation(const char* _pFilename)
     {
-        image.create(size.x, size.y, (const sf::Uint8*)pixels + step * i);
+        FILE* pFile = stbi__fopen(_pFilename, "rb");
+        stbi__context Context;
+        stbi__start_file(&Context, pFile);
 
-        sf::Texture texture;
-        texture.loadFromImage(image);
+        int* pDelays = nullptr;
+        int Z = 0, Comp = 0;
 
-        frames.push_back(std::tuple<int, sf::Texture>(delays[i], texture));
-    }
+        void* pPixels = stbi__load_gif_main(&Context, &pDelays, &m_Size.x, &m_Size.y, &Z, &Comp, STBI_rgb_alpha);
 
-    frameIter = frames.begin();
+        sf::Image Image;
+        int Step = m_Size.x * m_Size.y * 4;
 
-    stbi_image_free(pixels);
-    if (delays)
-        stbi_image_free(delays);
-    fclose(f);
-
-    totalDelay = sf::Time::Zero;
-    startTime = clock.getElapsedTime();
-}
-
-const sf::Vector2i&
-AnimatedGIF::getSize()
-{
-    return size;
-}
-
-void
-AnimatedGIF::update(sf::Sprite& sprite, bool _Animate)
-{
-    sf::Time delay = sf::milliseconds(std::get<0>(*frameIter));
-
-    if (_Animate)
-    {
-        m_Animate = true;
-    }
-
-    while (startTime + totalDelay + delay < clock.getElapsedTime())
-    {
-        frameIter++;
-        if (frameIter == frames.end())
+        for (int Index = 0; Index < Z; Index++)
         {
-            m_Animate = false;
-            frameIter = frames.begin();
+            Image.create(m_Size.x, m_Size.y, (const sf::Uint8*)pPixels + Step * Index);
+
+            sf::Texture Texture;
+            Texture.loadFromImage(Image);
+
+            m_Frames.push_back(std::tuple<int, sf::Texture>(pDelays[Index], Texture));
         }
-        totalDelay += delay;
-        delay = sf::milliseconds(std::get<0>(*frameIter));
+
+        m_FrameIter = m_Frames.begin();
+
+        stbi_image_free(pPixels);
+
+        if (pDelays)
+        {
+            stbi_image_free(pDelays);
+        }
+
+        fclose(pFile);
+
+        m_TotalDelay = sf::Time::Zero;
+        m_StartTime = m_Clock.getElapsedTime();
     }
 
-    if (!m_Animate)
+    const sf::Vector2i& CGifAnimation::GetSize()
     {
-        frameIter = frames.begin();
+        return m_Size;
     }
 
-    sf::Texture& texture = std::get<1>(*frameIter);
-    sprite.setTexture(texture);
+    void CGifAnimation::Update(sf::Sprite& _rSprite, bool _Animate)
+    {
+        sf::Time Delay = sf::milliseconds(std::get<0>(*m_FrameIter));
+
+        if (_Animate)
+        {
+            m_Animate = true;
+        }
+
+        while (m_StartTime + m_TotalDelay + Delay < m_Clock.getElapsedTime())
+        {
+            m_FrameIter++;
+            if (m_FrameIter == m_Frames.end())
+            {
+                m_Animate = false;
+                m_FrameIter = m_Frames.begin();
+            }
+            m_TotalDelay += Delay;
+            Delay = sf::milliseconds(std::get<0>(*m_FrameIter));
+        }
+
+        if (!m_Animate)
+        {
+            m_FrameIter = m_Frames.begin();
+        }
+
+        sf::Texture& rTexture = std::get<1>(*m_FrameIter);
+        _rSprite.setTexture(rTexture);
+    }
 }

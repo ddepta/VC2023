@@ -11,31 +11,35 @@
 
 namespace Data
 {
-    int CEntitySystem::Initialize(tinyxml2::XMLDocument& _rDocument)
+    int CEntitySystem::Initialize(tinyxml2::XMLDocument& _rLevelXml)
     {
         int EntityCount = 0;
 
         CMetaEntitySystem& rMetaEntitySystem = CMetaEntitySystem::GetInstance();
 
-        tinyxml2::XMLElement* pEntities = _rDocument.FirstChildElement("entities");
+        tinyxml2::XMLElement* pEntities = _rLevelXml.FirstChildElement("entities");
 
         int MaxScore = 0;
 
+        // -----------------------------------------------------------------------------
         // Iterate over each entity
+        // -----------------------------------------------------------------------------
         for (tinyxml2::XMLElement* pXmlEntity = pEntities->FirstChildElement("entity"); pXmlEntity != nullptr; pXmlEntity = pXmlEntity->NextSiblingElement())
         {
+            // -----------------------------------------------------------------------------
             // Extract entity name and meta-entity name
+            // Get meta-entity ID and reference
+            // Extract data element
+            // Extract type, size, and position information
+            // -----------------------------------------------------------------------------
             std::string Name = pXmlEntity->FindAttribute("name")->Value();
             std::string MetaEntityName = pXmlEntity->FindAttribute("meta-entity")->Value();
 
-            // Get meta-entity ID and reference
             auto Id = rMetaEntitySystem.GetMetaEntityID(MetaEntityName);
             CMetaEntity& rMetaEntity = rMetaEntitySystem.GetMetaEntityByID(Id);
 
-            // Extract data element
             tinyxml2::XMLElement* pDataElement = pXmlEntity->FirstChildElement("data");
 
-            // Extract type, size, and position information
             auto Type = atoi(pDataElement->FirstChildElement("type")->FirstChild()->Value());
             auto SizeStrings = Core::SplitStrings(pDataElement->FirstChildElement("size")->FirstChild()->Value(), ';');
             auto PositionStrings = Core::SplitStrings(pDataElement->FirstChildElement("position")->FirstChild()->Value(), ';');

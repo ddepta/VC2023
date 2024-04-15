@@ -33,6 +33,9 @@ namespace Logic
         return m_InputQueue.empty();
     }
 
+    // -----------------------------------------------------------------------------
+    // Get dispatched input from application and add it to the input system
+    // -----------------------------------------------------------------------------
     void CInputSystem::DispatchInput(Data::CEvent& _rEvent)
     {
         CInput& rEvent = *(new CInput());

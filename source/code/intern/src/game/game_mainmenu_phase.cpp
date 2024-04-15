@@ -1,8 +1,10 @@
 #include "game_mainmenu_phase.h"
+
 #include "data/data_mainmenu_phase.h"
 #include "gui/gui_mainmenu_phase.h"
 #include "graphics/gfx_mainmenu_phase.h"
 #include "data/data_event_system.h"
+
 #include <iostream>
 
 namespace Game
@@ -44,7 +46,7 @@ namespace Game
         return 0;
     }
 
-    void CMainMenuPhase::OnEnter(Data::CEvent& _rEvent)
+    void CMainMenuPhase::OnEnter(Data::CEvent&)
     {
         if (Gui::CMainMenuPhase::GetInstance().GetMenuState() == Gui::CMainMenuPhase::Start)
         {
@@ -56,7 +58,7 @@ namespace Game
         }
     }
 
-    void CMainMenuPhase::OnExit(Data::CEvent& _rEvent)
+    void CMainMenuPhase::OnExit(Data::CEvent&)
     {
         CMainMenuPhase::GetInstance().m_NextRunPhase = CPhase::Shutdown;
     }

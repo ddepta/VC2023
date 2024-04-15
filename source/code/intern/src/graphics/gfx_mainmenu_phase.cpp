@@ -27,15 +27,22 @@ namespace Gfx
         sf::Color TextColor = sf::Color(255, 255, 255);
         sf::Color SplashColor = sf::Color(255, 255, 0);
 
+        // -----------------------------------------------------------------------------
         // Scale viewport when resizing
+        // -----------------------------------------------------------------------------
         sf::FloatRect ViewPort(0.0f, 0.0f, WindowSize.x, WindowSize.y);
 
         rApplication.m_Window.setView(sf::View(ViewPort));
 
+        // -----------------------------------------------------------------------------
         // Calculate the proportional scaling for textures
+        // -----------------------------------------------------------------------------
         float MaxScaleFactor = std::max((float)WindowSize.x / 1600, (float)WindowSize.y / 900);
         float MinScaleFactor = std::min((float)WindowSize.x / 1600, (float)WindowSize.y / 900);
 
+        // -----------------------------------------------------------------------------
+        // Create Background
+        // -----------------------------------------------------------------------------
         sf::Texture BackgroundTexture;
 
         BackgroundTexture.loadFromFile("..\\resources\\images\\background_new.png");
@@ -44,10 +51,12 @@ namespace Gfx
         BackgroundSprite.setPosition(0, 0);
         BackgroundSprite.setScale(MaxScaleFactor, MaxScaleFactor);
 
+        // -----------------------------------------------------------------------------
+        // Create Title
+        // -----------------------------------------------------------------------------
         sf::Texture TitleTexture;
 
         TitleTexture.loadFromFile("..\\resources\\images\\title.png");
-
 
         sf::Sprite TitleSprite(TitleTexture);
         TitleSprite.setScale(MinScaleFactor, MinScaleFactor);
@@ -57,6 +66,9 @@ namespace Gfx
 
         TitleSprite.setPosition(TitlePositionX, TitlePositionY);
 
+        // -----------------------------------------------------------------------------
+        // Create Menu Buttons
+        // -----------------------------------------------------------------------------
         sf::Texture MenuTexture;
 
         if (Gui::CMainMenuPhase::GetInstance().GetMenuState() == Gui::CMainMenuPhase::Start)
@@ -69,28 +81,23 @@ namespace Gfx
         }
 
         sf::Sprite MenuSprite(MenuTexture);
-        //std::cout << "menusprite: " << MenuSprite.getGlobalBounds().width;
         MenuSprite.setScale(MinScaleFactor, MinScaleFactor);
-        //std::cout << "menusprite: " << MenuSprite.getGlobalBounds().width << "\n";
         MenuSprite.setPosition((ViewSize.x - (MenuSprite.getGlobalBounds().width - (115 * MinScaleFactor))) / 2, (ViewSize.y - (MenuSprite.getGlobalBounds().height - (28 * MinScaleFactor))) / 2);
 
+        // -----------------------------------------------------------------------------
+        // Create Controls
+        // -----------------------------------------------------------------------------
         sf::Texture ControlsTexture;
 
         ControlsTexture.loadFromFile("..\\resources\\images\\controls.png");
 
         sf::Sprite ControlsSprite(ControlsTexture);
-        //std::cout << "menusprite: " << ControlsSprite.getGlobalBounds().width;
         ControlsSprite.setScale(MinScaleFactor, MinScaleFactor);
-        //std::cout << "ControlsSprite: " << ControlsSprite.getGlobalBounds().width << "\n";
         ControlsSprite.setPosition((ViewSize.x - ControlsSprite.getGlobalBounds().width) / 2, (ViewSize.y - ControlsSprite.getGlobalBounds().height) / 1.1);
 
-        sf::Text VersionText;
-
-        VersionText.setString("Ostereiersuche 1.21");
-        VersionText.setCharacterSize(30);
-        VersionText.setFillColor(TextColor);
-        VersionText.setFont(Font);
-        VersionText.setPosition(10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
+        // -----------------------------------------------------------------------------
+        // Create Texts
+        // -----------------------------------------------------------------------------
 
         sf::Text SplashText;
 
@@ -102,6 +109,48 @@ namespace Gfx
         SplashText.setOutlineThickness(2.0f);
         SplashText.setRotation(-20.0f);
 
+        HandleSplashPulsation();
+
+        SplashText.setScale(MinScaleFactor * m_Splash.m_TextScale, MinScaleFactor * m_Splash.m_TextScale);
+        SplashText.setPosition(TitlePositionX + (800 * MinScaleFactor) - (SplashText.getGlobalBounds().width / 2), TitlePositionY + (150 * MinScaleFactor));
+
+        sf::Text VersionText;
+
+        VersionText.setString("Ostereiersuche 1.21");
+        VersionText.setCharacterSize(30);
+        VersionText.setFillColor(TextColor);
+        VersionText.setFont(Font);
+        VersionText.setPosition(10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
+
+        sf::Text NameText;
+
+        NameText.setString("Daniel Depta - FH Erfurt");
+        NameText.setCharacterSize(30);
+        NameText.setFillColor(TextColor);
+        NameText.setFont(Font);
+        NameText.setPosition(ViewSize.x - NameText.getGlobalBounds().width - 10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
+
+        rApplication.m_Window.clear(sf::Color::Black);
+
+        // -----------------------------------------------------------------------------
+        // Draw all Sprites/Texts
+        // -----------------------------------------------------------------------------
+        rApplication.m_Window.draw(BackgroundSprite);
+        rApplication.m_Window.draw(TitleSprite);
+        rApplication.m_Window.draw(MenuSprite);
+        rApplication.m_Window.draw(ControlsSprite);
+        rApplication.m_Window.draw(VersionText);
+        rApplication.m_Window.draw(NameText);
+        rApplication.m_Window.draw(SplashText);
+
+        rApplication.m_Window.display();
+    }
+
+    void CMainMenuPhase::OnLeave()
+    {}
+
+    void CMainMenuPhase::HandleSplashPulsation()
+    {
         if (m_Splash.m_Growing)
         {
             m_Splash.m_TextScale += 0.01f;
@@ -119,33 +168,7 @@ namespace Gfx
         {
             m_Splash.m_Growing = false;
         }
-
-        SplashText.setScale(MinScaleFactor * m_Splash.m_TextScale, MinScaleFactor * m_Splash.m_TextScale);
-        SplashText.setPosition(TitlePositionX + (800 * MinScaleFactor) - (SplashText.getGlobalBounds().width / 2), TitlePositionY + (150 * MinScaleFactor));
-
-        sf::Text NameText;
-
-        NameText.setString("Daniel Depta - FH Erfurt");
-        NameText.setCharacterSize(30);
-        NameText.setFillColor(TextColor);
-        NameText.setFont(Font);
-        NameText.setPosition(ViewSize.x - NameText.getGlobalBounds().width - 10, (ViewSize.y - VersionText.getGlobalBounds().height - 20));
-
-        rApplication.m_Window.clear(sf::Color::Black);
-
-        rApplication.m_Window.draw(BackgroundSprite);
-        rApplication.m_Window.draw(TitleSprite);
-        rApplication.m_Window.draw(MenuSprite);
-        rApplication.m_Window.draw(ControlsSprite);
-        rApplication.m_Window.draw(VersionText);
-        rApplication.m_Window.draw(NameText);
-        rApplication.m_Window.draw(SplashText);
-
-        rApplication.m_Window.display();
     }
-
-    void CMainMenuPhase::OnLeave()
-    {}
 
     void CMainMenuPhase::SSplash::GenerateRandomSplashText()
     {

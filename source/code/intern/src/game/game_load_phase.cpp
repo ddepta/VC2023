@@ -20,10 +20,13 @@ namespace Game
 
     int CLoadPhase::InternOnRun()
     {
-        tinyxml2::XMLDocument* pDocument = new tinyxml2::XMLDocument();
-        pDocument->LoadFile("..\\resources\\level\\level.xml");
+        // -----------------------------------------------------------------------------
+        // Load Level
+        // -----------------------------------------------------------------------------
+        tinyxml2::XMLDocument* pLevelXml = new tinyxml2::XMLDocument();
+        pLevelXml->LoadFile("..\\resources\\level\\level.xml");
 
-        Data ::CLoadPhase::GetInstance().OnRun(*pDocument);
+        Data ::CLoadPhase::GetInstance().OnRun(*pLevelXml);
         Logic::CLoadPhase::GetInstance().OnRun();
         Gui  ::CLoadPhase::GetInstance().OnRun();
         Gfx  ::CLoadPhase::GetInstance().OnRun();

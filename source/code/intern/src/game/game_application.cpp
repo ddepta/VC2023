@@ -1,7 +1,6 @@
 
 #include "game_application.h"
 
-#include <assert.h>
 #include "game_phase.h"
 #include "game_startup_phase.h"
 #include "game_load_phase.h"
@@ -11,6 +10,7 @@
 #include "game_unload_phase.h"
 #include "data/data_event_system.h"
 
+#include <assert.h>
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
@@ -32,6 +32,9 @@ namespace Game
 
     void CApplication::Startup()
     {
+        // -----------------------------------------------------------------------------
+        // Create the game window
+        // -----------------------------------------------------------------------------
         m_Window.create(sf::VideoMode(1600, 900), "Visual Computing - Daniel Depta");
 
         m_CurrentPhase = CPhase::Startup;
@@ -44,6 +47,9 @@ namespace Game
         sf::Event event;
         bool Running = true;
 
+        // -----------------------------------------------------------------------------
+        // Game loop
+        // -----------------------------------------------------------------------------
         while(Running)
         {
             if (m_Window.isOpen() == false)
@@ -58,6 +64,10 @@ namespace Game
                     m_Window.close();
                 }
 
+                // -----------------------------------------------------------------------------
+                // Event (input) handling
+                // Fires a event for each input
+                // -----------------------------------------------------------------------------
                 if (event.type == sf::Event::KeyPressed)
                 {
                     if (event.key.code == sf::Keyboard::Key::Escape)
@@ -102,12 +112,14 @@ namespace Game
         assert(pCurrentPhase != nullptr);
 
         CPhase::EPhase NextPhase = static_cast<CPhase::EPhase>(pCurrentPhase->OnRun());
-        int indexOfNextPhase = pCurrentPhase->OnRun();
 
         if (NextPhase != m_CurrentPhase)
         {
             pCurrentPhase->OnLeave();
 
+            // -----------------------------------------------------------------------------
+            // exit the while-loop when shutting down
+            // -----------------------------------------------------------------------------
             if (m_CurrentPhase == CPhase::Shutdown)
             {
                 return false;
@@ -128,11 +140,55 @@ namespace Game
 
 int main()
 {
-    Game::CApplication& rInstance = Game::CApplication::GetInstance();
+    Game::CApplication& rApplication = Game::CApplication::GetInstance();
 
-    rInstance.Startup();
-    rInstance.Run();
-    rInstance.Shutdown();
+    // -----------------------------------------------------------------------------
+    // Startup
+    // -----------------------------------------------------------------------------
+    try
+    {
+        rApplication.Startup();
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << e.what() << std::endl;
+    }
+    catch (...)
+    {
+        std::cerr << "Failed to start" << std::endl;
+    }
+
+    // -----------------------------------------------------------------------------
+    // Running
+    // -----------------------------------------------------------------------------
+    try
+    {
+        rApplication.Run();
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << e.what() << std::endl;
+    }
+    catch (...)
+    {
+        std::cerr << "Failed to run" << std::endl;
+    }
+
+    // -----------------------------------------------------------------------------
+    // Shutdown
+    // -----------------------------------------------------------------------------
+    try
+    {
+        rApplication.Shutdown();
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << e.what() << std::endl;
+    }
+    catch (...)
+    {
+        std::cerr << "Failed to shutdown" << std::endl;
+    }
 
     return 0;
 }

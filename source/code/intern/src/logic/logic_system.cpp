@@ -14,6 +14,9 @@ namespace Logic
     {
         CInputSystem& rInputSystem = CInputSystem::GetInstance();
 
+        // -----------------------------------------------------------------------------
+        // Move the player based on input
+        // -----------------------------------------------------------------------------
         while (!rInputSystem.InputQueueIsEmpty())
         {
             CInput* pCurrentInput = &(rInputSystem.GetNextInQueue());
@@ -52,6 +55,9 @@ namespace Logic
             return;
         }
 
+        // -----------------------------------------------------------------------------
+        // Next positition to check for collision 
+        // -----------------------------------------------------------------------------
         Core::CAABB3<float> NextPosition = Core::CAABB3<float>(
             Core::Float3(
                 pPlayerEntity->m_Position[0] + _Direction[0] + 1, 
@@ -66,7 +72,7 @@ namespace Logic
         std::vector<Data::CEntity*> Entities = Data::CEntitySystem::GetInstance().GetAllEntities();
         std::vector<Data::CEntity*> Points;
 
-        bool WallCollision = false;
+        bool ObstacleCollision = false;
 
         for (Data::CEntity* pEntity : Entities)
         {
@@ -74,7 +80,7 @@ namespace Logic
             {
                 if (pEntity->m_Category == Data::SEntityCategory::Obstacle)
                 {
-                    WallCollision = true;
+                    ObstacleCollision = true;
                 }
                 if (pEntity->m_Category == Data::SEntityCategory::Egg)
                 {
@@ -88,6 +94,9 @@ namespace Logic
             }
         }
 
+        // -----------------------------------------------------------------------------
+        // Change player direction
+        // -----------------------------------------------------------------------------
         if (_LookDirection == -1)
         {
             rPlayerSystem.SetPlayerDirection(Data::CPlayerSystem::Left);
@@ -97,9 +106,15 @@ namespace Logic
             rPlayerSystem.SetPlayerDirection(Data::CPlayerSystem::Right);
         }
 
+        // -----------------------------------------------------------------------------
+        // Start player animation because player tried to move
+        // -----------------------------------------------------------------------------
         rPlayerSystem.SetPlayerAnimationState(true);
 
-        if (!WallCollision)
+        // -----------------------------------------------------------------------------
+        // Move player
+        // -----------------------------------------------------------------------------
+        if (!ObstacleCollision)
         {
             pPlayerEntity->m_Position = 
                 Core::Float3(

@@ -40,6 +40,9 @@ namespace Gfx
         SSplash m_Splash;
 
     private:
+        void HandleSplashPulsation();
+
+    private:
         CMainMenuPhase()
         {
             m_Splash.m_SplashTexts.push_back("the cake is a lie");
